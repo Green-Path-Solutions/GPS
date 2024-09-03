@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Fundación</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="tel:+123456789">
+                    <i class="fas fa-phone-alt"></i> Tel: +123 456 789
+                </a>
+                <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <div class="login">
+                <a href="#login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="contacto.html">Contacto</li>
+
+            </ul>
+
+            <div class="logo">
+                <a href="#">Nombre Fundación</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="search"><i class="fas fa-search"></i></button>
+                <button id="theme-toggle"><i class="fas fa-sun"></i><i class="fas fa-moon hidden"></i></button>
+                <button id="store"><i class="fas fa-store"></i> Tarifas</button>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="pricing-plans">
+        <div class="plan basic">
+            <div class="plan-header">
+                <h2>Básico</h2>
+                <p>Servicio de reciclaje accesible y funcional para pequeñas empresas o clientes individuales</p>
+            </div>
+            <ul class="plan-features">
+                <li><i class="fas fa-check-circle"></i> Recolección Programada: Servicio de recolección de residuos
+                    electrónicos en fechas específicas.</li>
+                <li><i class="fas fa-check-circle"></i> Reciclaje Seguro: Procesamiento básico de los residuos
+                    electrónicos con métodos estándar de reciclaje.</li>
+                <li><i class="fas fa-check-circle"></i> Informe Básico de Reciclaje: Reporte que muestra el volumen de
+                    residuos procesados y su destino final.</li>
+                <li><i class="fas fa-check-circle"></i> Destrucción de Datos Sensibles: Servicio de destrucción segura
+                    de datos en dispositivos electrónicos antes de su reciclaje.</li>
+            </ul>
+            <div class="plan-price">
+                <p>A partir de <strong>US$ 500</strong> por x tiempo</p>
+            </div>
+            <button class="select-plan">SELECT</button>
+        </div>
+
+        <div class="plan premium">
+            <div class="plan-header">
+                <h2>Premium</h2>
+                <p>Servicio de reciclaje para empresas más avanzadas y con mayor tamaño</p>
+            </div>
+            <ul class="plan-features">
+                <li><i class="fas fa-check-circle"></i> Recolección Personalizada: Servicio de recolección en fechas y
+                    horarios a elección del cliente.</li>
+                <li><i class="fas fa-check-circle"></i> Reciclaje Avanzado: Procesamiento más detallado, incluyendo la
+                    recuperación de materiales valiosos.</li>
+                <li><i class="fas fa-check-circle"></i> Informe Standard de Reciclaje: Reporte que incluye un análisis
+                    más profundo del impacto ambiental y la trazabilidad de los residuos.</li>
+                <li><i class="fas fa-check-circle"></i> Asesoría en Cumplimiento Normativo: Consultoría básica para
+                    asegurar que la empresa cumpla con las normativas ambientales vigentes.</li>
+                <li><i class="fas fa-check-circle"></i> Destrucción de Datos Sensibles: Servicio de destrucción segura
+                    de datos en dispositivos electrónicos antes de su reciclaje.</li>
+            </ul>
+            <div class="plan-price">
+                <p>A partir de <strong>US$ 800</strong> por x tiempo</p>
+            </div>
+            <button class="select-plan">SELECT</button>
+        </div>
+
+        <div class="plan enterprise">
+            <div class="plan-header">
+                <h2>Empresarial</h2>
+                <p>Servicio de reciclaje para grandes empresas y corporaciones</p>
+            </div>
+            <ul class="plan-features">
+                <li><i class="fas fa-check-circle"></i> Recolección a Demanda: Servicio de recolección flexible,
+                    disponible en cualquier momento según las necesidades del cliente.</li>
+                <li><i class="fas fa-check-circle"></i> Reciclaje Integral: Procesamiento exhaustivo con recuperación
+                    avanzada de materiales y tratamiento especializado de componentes electrónicos.</li>
+                <li><i class="fas fa-check-circle"></i> Informe Completo y Certificación: Reporte detallado con
+                    certificaciones de reciclaje, útil para auditorías y reportes corporativos.</li>
+                <li><i class="fas fa-check-circle"></i> Asesoría Completa en Sostenibilidad: Consultoría integral para
+                    ayudar a la empresa a diseñar y adoptar políticas de sostenibilidad más amplias.</li>
+                <li><i class="fas fa-check-circle"></i> Destrucción de Datos Sensibles: Servicio de destrucción segura
+                    de datos en dispositivos electrónicos antes de su reciclaje.</li>
+            </ul>
+            <div class="plan-price">
+                <p>A partir de <strong>US$ 1000</strong> por x tiempo</p>
+            </div>
+            <button class="select-plan">SELECT</button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Aquí va el pie de página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="path-to-your-logo.png" alt="Green Path Solutions">
+                <p>Bienvenido a Green Path Solutions, su socio en soluciones sostenibles.</p>
+                <div class="social-media-icons">
+                    <a href="#"><img src="path-to-your-facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="path-to-your-instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="path-to-your-twitter-icon.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>ENLACES RAPIDOS</h4>
+                    <ul>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>NUESTROS SERVICIOS</h4>
+                    <ul>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                        <li><a href="#">Añadir un poco de texto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li><a href="#">📞 0000-0000-0000</a></li>
+                        <li><a href="#">✉️ xxxxx@xxxx.com</a></li>
+                        <li><a href="#">📍 Barracas, Bs. As. Argentina</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Green Path Solutions, Foundation. All Rights reserved. <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
