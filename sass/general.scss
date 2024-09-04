@@ -1,0 +1,196 @@
+@import "variables"; //!  Reseteando Estilos globales
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+//! Para definir el sobre Header
+/* Estilos para la top-bar */
+.top-bar {
+  background-color: #e9eaed;
+  color: #333;
+  padding: 1rem 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info a i {
+  margin-right: 5px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp {
+  color: #25d366;
+  font-weight: bold;
+}
+
+.login a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.login a i {
+  margin-right: 5px;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+//! Definir los rems
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  padding: 2rem 9.6rem;
+  // background-color: #fffdfd;
+  border: 2px solid #bccc48;
+  color: #666;
+  // padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  max-width: 1200rem;
+  margin: 0 auto;
+  position: relative;
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+
+    li {
+      padding: 0 1.8rem;
+    }
+
+    a {
+      color: #131407;
+      text-decoration: none;
+      transition: all 0.3 ease;
+      &:hover {
+        text-shadow: 1px 0 0 $color-font;
+        color: $color-font;
+      }
+    }
+  }
+  .logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    .logo-cont {
+      display: inline-block;
+      position: relative;
+      // padding-bottom: 10rem;
+      // padding-right: 7rem;
+
+      .logo-text1 {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        color: #131407;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+      .logo-text2 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #bccc48;
+        text-decoration: none;
+        position: absolute;
+        top: 1.8rem;
+        right: -5rem;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    img {
+      height: 7rem;
+      margin-right: 2rem;
+    }
+  }
+  .nav-actions {
+    padding-left: 9.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    button {
+      // padding-left: 1rem;
+      background: none;
+      color: $color-icon;
+      font-size: 1.8em;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    #theme-toggle {
+      background: none;
+      color: $color-icon;
+      font-size: 1.8em;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    #language-toggle {
+      border: none;
+      color: $color-icon;
+      font-size: 1.8em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a {
+      background-image: linear-gradient(to right bottom, #0097b2, #7ed957);
+      padding: 1.4rem 1.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: #fff;
+
+      &:hover {
+        background-image: linear-gradient(to right bottom, #7ed957, #0097b2);
+      }
+    }
+  }
+}
