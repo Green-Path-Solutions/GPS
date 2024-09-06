@@ -1,0 +1,18 @@
+@keyframes change {
+  33% {
+    background-image: url(/img/fondo-slide2.jpg);
+  }
+  66% {
+    background-image: url(/img/fondo-slide3.jpg);
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*# sourceMappingURL=keyframes.css.map */

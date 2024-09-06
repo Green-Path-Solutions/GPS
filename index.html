@@ -3,33 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nombre de la Fundación</title>
+    <title>Green Path Solutions</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/general.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
   </head>
 
   <body>
     <header>
+
+      <!-- ! top Bar -->
       <div class="top-bar">
-        <div class="contact-info">
-          <a href="tel:+123456789">
-            <i class="fas fa-phone-alt"></i> Tel: +123 456 789
-          </a>
-          <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
+        <div class="top-bar-cont">
+          <div class="contact-mail">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:ejemplo@dominio.com">info@gpsconsulting.com</a>
+          </div>
+          <div class="contact-wsp">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">WhatsApp</a>
+          </div>
         </div>
         <div class="login">
-          <a href="login.html">
-            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-          </a>
+          <a href="login.html">Iniciar</a>
+          <ion-icon name="person-circle-outline"></ion-icon>
         </div>
       </div>
-
+      
+    
+      <!-- !Nav -->
       <nav>
         <ul class="nav-links">
           <li class="nav-li"><a href="index.html">Inicio</a></li>
@@ -41,105 +42,133 @@
         </ul>
 
         <div class="logo">
-          <img src="/img/logo.png" alt="Logo verde de la compañia" />
-          <div class="logo-cont">
-            <a class="logo-text1" href="index.html">Green Path</a>
-            <a class="logo-text2" href="index.html">Solutions</a>
+          <img src="/img/logo.png" alt="Logo de la compañia" />
           </div>
         </div>
 
+        <!-- ! Actions -->
         <div class="nav-actions">
-          <button id="search"><i class="fas fa-search"></i></button>
-          <button id="theme-toggle">
-            <i class="fas fa-sun"></i>
-            <!-- <i class="fas fa-moon hidden"></i> -->
+          <button id="search">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <button class="theme-toggle">
+            <ion-icon  name="sunny-outline"></ion-icon>
+            <!-- <ion-icon  name="moon-outline hidden"></ion-icon> -->
           </button>
           <!-- Esto va a servir para hacer toggle entre ES/EN -->
-          <button id="language-toggle">ES</button>
+          <button class="language-toggle">ES</button>
           <!-- Nuevo botón de idioma -->
-          <a href="tarifas.html" class="btn-tarifas">Tarifas</a>
+          <a href="tarifas.html" class="btn-tar">Tarifas</a>
         </div>
 
         <!-- ! nose que es esto revisar despues -->
-        <button class="nav-toggle" aria-label="Toggle navigation">
+        <!-- <button class="nav-toggle" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
-        </button>
+        </button> -->
       </nav>
     </header>
 
     <main>
-      <!-- Carrusel de imágenes -->
-      <section id="carousel">
-        <div class="carousel-container">
-          <div class="carousel-slide">
-            <img
-              src="imagen/ey-grupo-lider-personas-reunion.jpg"
-              alt="Imagen 1"
-            />
-            <div class="carousel-caption">
-              <p class="carousel-text">
-                ¿Querès adoptar un enfoque responsable y generar un impacto
-                postivo para tu empresa?
-              </p>
-              <a href="#more-info" class="btn-more-info">Más Info</a>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img
-              src="imagen/istockphoto-498323251-1024x1024.jpg"
-              alt="Imagen 2"
-            />
-            <div class="carousel-caption">
-              <p class="carousel-text">
-                ¿Querès adoptar un enfoque responsable y generar un impacto
-                postivo para tu empresa?
-              </p>
-              <a href="#more-info" class="btn-more-info">Más Info</a>
+
+      <!--! Carrusel de imágenes -->
+       <section class="container-carousel">
+        <div class="container-bg">
+          <div class="container-text">
+            <h1 class="container-h1">¿Querés adoptar un enfoque responsable y generar un impacto positivo para tu empresa?</h1>
+            <div class="btn-i">
+              <a class="btn-tarifas" href="#">tarifas</a>
+              <a class="btn-ver-mas" href="#">ver más</a>
             </div>
           </div>
         </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-      </section>
+       </section>
 
-      <section id="text-and-box">
+       <!-- !Quienes somos -->
+      <section class="quienes-somos">
         <div class="text-section">
-          <h1>Tu Título Aquí</h1>
+          <h1><span>Somos</span> Green Path Solutions</h1>
           <p>
-            Texto adicional aquí. Puedes agregar más detalles o información
-            relevante.
+            Ayudamos a las organizaciones a 
+            alcanzar sus objetivos de gobernanza 
+            social ambiental (ESG) y sostenibilidad. 
+            Brindamos soluciones medioambientales sustentables 
+            y fortalecemos el uso eficiente de recursos.
           </p>
         </div>
-        <div class="box-section">
-          <div class="rounded-box">
-            <p>Texto en el cuadro</p>
-          </div>
+        <!-- ? Cartelito -->
+        <div class="img-section">
+            <img src="img/cuadrito.png">
         </div>
-      </section>
+
+        <!-- ? Cartelitos abajo -->
+         
+           <div class="cont-quienes-somos">
+             <img class="img-historia" src="/img/historia.png" alt="Imagen de reunion de trabajo">
+             <div class="cont-text">
+               <p class="titulo-historia"><span>Nuestra</span> Historia</p>
+               <p class="parrafo-historia">Con una profunda pasión por el medio ambiente, nacimos para transformar residuos electrónicos en recursos valiosos. A lo largo de los años, hemos crecido y evolucionado, convirtiéndonos en un aliado para empresas que buscan prácticas más sostenibles.</p>
+               <a class="link-historia" href="nosotros.html">>> leer más</a>
+              </div>
+            </div>
+        
+       
+           <div class="cont-quienes-somos">
+              <img class="img-historia" src="/img/servicios.png" alt="Imagen de reunion de trabajo">
+             <div class="cont-text">
+               <p class="titulo-historia"><span>Nuestro</span> Servicios</p>
+               <p class="parrafo-historia">Ofrecemos soluciones integrales de reciclaje electrónico y soporte, adaptadas a las necesidades de pequeñas y grandes empresas. Desde la recolección hasta el reciclaje, garantizamos un proceso eficiente, seguro y ecológico.
+              </p>
+              <a class="link historia" href="nosotros.html">>> leer más</a>
+            </div>
+            </div>
+        
+         
+           <div class="cont-quienes-somos">
+             <img class="img-historia" src="/img/propuesta.png" alt="Imagen de reunion de trabajo">
+             <div class="cont-text">
+               <p class="titulo-historia"><span>Nuestra</span> Propuesta</p>
+               <p class="parrafo-historia">Nos comprometemos a reducir el impacto ambiental de nuestros clientes, brindando un servicio de reciclaje electrónico que transforma residuos en oportunidades, apoyando a las empresas en su camino hacia la sostenibilidad.</p>
+               <a class="link historia" href="nosotros.html">>> leer más</a>
+              </div>
+            </div>      
+            <div class="barra-img">
+              <img src="/img/barra.png">
+              <p></p>
+            </div>
+          </section>
     </main>
 
-    <section id="small-images">
-      <div class="small-image-item">
-        <img src="imagen/descarga.jfif" alt="Imagen Pequeña 1" />
-        <h2>Título 1</h2>
-        <p>Texto descriptivo para la primera imagen.</p>
-        <a href="#read-more" class="btn-read-more">Leer más</a>
-      </div>
-      <div class="small-image-item">
-        <img src="imagen/img.jfif" alt="Imagen Pequeña 2" />
-        <h2>Título 2</h2>
-        <p>Texto descriptivo para la segunda imagen.</p>
-        <a href="#read-more" class="btn-read-more">Leer más</a>
-      </div>
-      <div class="small-image-item">
-        <img src="imagen/img.jfif" alt="Imagen Pequeña 3" />
-        <h2>Título 3</h2>
-        <p>Texto descriptivo para la tercera imagen.</p>
-        <a href="#read-more" class="btn-read-more">Leer más</a>
-      </div>
-    </section>
+<!-- ?Antiguo Somos green path -->
 
-    <section id="slogan-section">
+    <section class="container-ser">  
+    <div class="service">
+   
+      <h2>Nuestros Servicios</h2>
+      <p class="service-p">Soluciones Ecológicas para el Manejo de Residuos Electrónicos</p>
+
+      <div class="small-image-item">
+        <img src="img/shell.png" alt="Imagen de un escudo" />
+        <h3>Destrucción de datos sensibles</h3>
+        <p>Ofrecemos destrucción y recuperación segura de datos en discos duros y otros dispositivos, garantizando la privacidad de la información.</p>
+        <a href="#read-more" class="btn-see-more">Leer más</a>
+      </div>
+      <div class="small-image-item">
+        <img src="img/logo-recycle.png" alt="Imagen de un logo" />
+        <h3>Recolección de residuos</h3>
+        <p>Ayudamos a cumplir objetivos ESG y sostenibilidad con soluciones medioambientales y uso eficiente de recursos.</p>
+        <a href="#read-more" class="btn-see-more">Leer más</a>
+      </div>
+      <div class="small-image-item">
+        <img src="img/tuerca.png" alt="Imagen de una tuerca" />
+        <h3>Capacitación y concientización</h3>
+        <p>
+          Ofrecemos consultoría para desarrollar estrategias efectivas en la gestión de residuos electrónicos.</p>
+          <a href="#read-more" class="btn-see-more">Leer más</a>
+        </div>
+      </div>
+        </section>
+        
+        <!-- <section id="slogan-section">
       <div class="slogan-image">
         <div class="slogan-text">
           <p>Texto del eslogan o mensaje aquí.</p>
@@ -155,9 +184,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="info-section">
+    <!-- <section id="info-section">
       <div class="info-container">
         <div class="info-box">
           <div class="info-box-content">
@@ -186,9 +215,37 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <div class="news-section">
+    </section> -->
+    
+    <!-- ? Logos -->
+    <div class="clientes-section">
+      <h2>Nuestros Clientes</h2>
+      <div class="container-logos">
+        <div class="clientes-container">
+          <img src="/img/logo1.png" alt="Partner 1" />
+          <img src="/img/logo2.png" alt="Partner 1" />
+          <img src="/img/logo3.png" alt="Partner 1" />
+          <img src="/img/logo4.png" alt="Partner 1" />
+          <img class="ibm-img" src="/img/logo5.png" alt="Partner 1" />
+          <img src="/img/logo6.png" alt="Partner 1" />
+          <img src="/img/logo7.png" alt="Partner 1" />
+          <img class="lenovo-img" src="/img/logo8.png" alt="Partner 1" />
+        </div>
+        <div class="clientes-container">
+          <img src="/img/logo1.png" alt="Partner 1" />
+          <img src="/img/logo2.png" alt="Partner 1" />
+          <img src="/img/logo3.png" alt="Partner 1" />
+          <img src="/img/logo4.png" alt="Partner 1" />
+          <img class="ibm-img" src="/img/logo5.png" alt="Partner 1" />
+          <img src="/img/logo6.png" alt="Partner 1" />
+          <img src="/img/logo7.png" alt="Partner 1" />
+          <img class="lenovo-img" src="/img/logo8.png" alt="Partner 1" />
+        </div>
+      </div>
+    </div>
+    
+    <!-- ? Noticias  -->
+    <!-- <div class="news-section">
       <h2>Noticias</h2>
       <div class="news-container">
         <div class="news-item">
@@ -225,41 +282,24 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="partners-section">
-      <h2>Partners</h2>
-      <div class="partners-container">
-        <img src="partner1.jpg" alt="Partner 1" />
-        <img src="partner2.jpg" alt="Partner 2" />
-        <img src="partner3.jpg" alt="Partner 3" />
-        <img src="partner4.jpg" alt="Partner 4" />
-        <img src="partner5.jpg" alt="Partner 5" />
-      </div>
-    </div>
 
     <!-- Aquí va el pie de página -->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="path-to-your-logo.png" alt="Green Path Solutions" />
+          <img src="/img/logo.png" alt="Green Path Solutions" />
           <p>
             Bienvenido a Green Path Solutions, su socio en soluciones
             sostenibles.
           </p>
           <div class="social-media-icons">
-            <a href="#"
-              ><img src="path-to-your-facebook-icon.png" alt="Facebook"
-            /></a>
-            <a href="#"
-              ><img src="path-to-your-instagram-icon.png" alt="Instagram"
-            /></a>
-            <a href="#"
-              ><img src="path-to-your-twitter-icon.png" alt="Twitter"
-            /></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
           </div>
         </div>
-        <div class="footer-links">
           <div class="footer-column">
             <h4>ENLACES RAPIDOS</h4>
             <ul>
@@ -286,7 +326,6 @@
               <li><a href="#">📍 Barracas, Bs. As. Argentina</a></li>
             </ul>
           </div>
-        </div>
       </div>
       <div class="footer-bottom">
         <p>
@@ -297,5 +336,7 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
