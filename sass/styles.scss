@@ -252,6 +252,7 @@
 
     p {
       font-size: 1.8rem;
+      color: $color-text;
     }
   }
   .img-section {
@@ -323,6 +324,7 @@
     .parrafo-historia {
       font-size: 1.2rem;
       margin-bottom: 4rem;
+      color: #333;
     }
 
     a {
@@ -665,6 +667,108 @@
     }
   }
 }
+
+// ! Servicios
+// !-------------------------
+// !-------------------------
+
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.subtitulo {
+  display: block;
+  font-size: 7.4rem;
+  font-weight: 500;
+  color: $color-secondary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  span {
+    color: $color-font;
+  }
+}
+.little-box {
+  width: 6rem;
+  height: 1.6rem;
+  background-color: $color-secondary;
+  margin-bottom: 8rem;
+}
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    /* height: 60%; */
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #e6f7e3;
+    z-index: -2;
+  }
+
+  &::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #d7e6d3;
+    z-index: -1;
+  }
+
+  .step-img {
+    max-width: 38%;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.step-text-box {
+  .service-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #d5ecd1;
+    margin-bottom: 1.2rem;
+  }
+  .sub-service-ti {
+    color: #333;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .step-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: $color-text;
+  }
+}
+
+-------------------
+
 
 /* NOSOTROS */
 .nosotros-header {

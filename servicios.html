@@ -1,226 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Path Solutions</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de la Fundación</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="top-bar">
-            <div class="contact-info">
-                <a href="tel:+123456789">
-                    <i class="fas fa-phone-alt"></i> Tel: +123 456 789
-                </a>
-                <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-            </div>
-            <div class="login">
-                <a href="#login">
-                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-                </a>
-            </div>
+
+      <!-- ! top Bar -->
+      <div class="top-bar">
+        <div class="top-bar-cont">
+          <div class="contact-mail">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:ejemplo@dominio.com">info@gpsconsulting.com</a>
+          </div>
+          <div class="contact-wsp">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">WhatsApp</a>
+          </div>
+        </div>
+        <div class="login">
+          <a href="login.html">Iniciar</a>
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+      </div>
+      
+    
+      <!-- !Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-li"><a href="index.html">Inicio</a></li>
+          <li class="nav-li"><a href="nosotros.html">Nosotros</a></li>
+          <li class="nav-li"><a href="servicios.html">Servicios</a></li>
+          <!-- <li><a href="soporte.html">Recursos</a></li> -->
+          <li class="nav-li"><a href="recursos.html">Recursos</a></li>
+          <li class="nav-li"><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="logo">
+          <img src="/img/logo.png" alt="Logo de la compañia" />
+          </div>
         </div>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="contacto.html">Contacto</li>
+        <!-- ! Actions -->
+        <div class="nav-actions">
+          <button id="search">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <button class="theme-toggle">
+            <ion-icon  name="sunny-outline"></ion-icon>
+            <!-- <ion-icon  name="moon-outline hidden"></ion-icon> -->
+          </button>
+          <!-- Esto va a servir para hacer toggle entre ES/EN -->
+          <button class="language-toggle">ES</button>
+          <!-- Nuevo botón de idioma -->
+          <a href="tarifas.html" class="btn-tar">Tarifas</a>
+        </div>
 
-            </ul>
-
-            <div class="logo">
-                <a href="#">Nombre Fundación</a>
-            </div>
-
-            <div class="nav-actions">
-                <button id="search"><i class="fas fa-search"></i></button>
-                <button id="theme-toggle"><i class="fas fa-sun"></i><i class="fas fa-moon hidden"></i></button>
-                <a href="tarifas.html" class="btn-tarifas"><i class="fas fa-store"></i> Tarifas</a>
-            </div>
-
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
+        <!-- ! nose que es esto revisar despues -->
+        <!-- <button class="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button> -->
+      </nav>
     </header>
 
-    
-    <section class="nosotros-header">
-        <div class="header-content">
-            <img src="imagen/descarga.jfif" alt="Imagen Central">
+  <section class="section-how" id="how">
+        <div class="container">
+          <span class="subtitulo"><span>Nuestros</span> Servicios</span>
+          <div class="little-box"></div>
         </div>
-    </section>
 
-    
-    <section class="nosotros-title-section">
-        <div class="title-container">
-            <h2>Sobre Nosotros</h2>
-            <p class="subtitle">Un breve subtítulo aquí</p>
-        </div>
-        <div class="info-box-rounded">
-            <p>Información relevante sobre la empresa, historia o valores.</p>
-        </div>
-    </section>
+        <div class="container grid grid--2-cols grid--center-v">
+          <!--! Service 1 -->
 
-   
-    <section class="nosotros-info-section">
-        <div class="info-left">
-            <p>Texto informativo alineado a la izquierda.</p>
-        </div>
-        <div class="info-right">
-            <p>Texto informativo alineado a la derecha.</p>
-        </div>
-    </section>
-
-    
-    <section class="services-photos-section">
-        <div class="photo-item">
-            <img src="imagen/foto1.jpg" alt="Foto 1">
-        </div>
-        <div class="photo-item">
-            <img src="imagen/foto2.jpg" alt="Foto 2">
-        </div>
-        <div class="photo-item">
-            <img src="imagen/foto3.jpg" alt="Foto 3">
-        </div>
-    </section>
-
-    
-    <section class="why-choose-us">
-        <h2>¿Por qué elegirnos?</h2>
-        <ul class="choose-us-items">
-            <li>Item 1: Descripción breve.</li>
-            <li>Item 2: Descripción breve.</li>
-            <li>Item 3: Descripción breve.</li>
-        </ul>
-    </section>
-
-    
-    <section class="more-info-section">
-        <div class="more-info-content">
-            <img src="imagen/small-image.jpg" alt="Imagen pequeña" class="small-image">
-            <div class="text-content">
-                <p>Información adicional sobre los servicios.</p>
-                <a href="#contact" class="btn-contact">Contacto</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Espaciado -->
-    <br>
-
-    <!-- Nuestros Servicios -->
-    <section class="our-services">
-        <h2>NUESTROS SERVICIOS</h2>
-        <div class="services-list">
-            <div class="service-item">
-                <h3>Servicio 1</h3>
-                <p>Subtítulo llamativo.</p>
-            </div>
-            <div class="service-item">
-                <h3>Servicio 2</h3>
-                <p>Subtítulo llamativo.</p>
-            </div>
-            <div class="service-item">
-                <h3>Servicio 3</h3>
-                <p>Subtítulo llamativo.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formulario de contacto -->
-    <section class="contact-form-section" id="contact">
-        <div class="form-container">
-            <div class="form-content">
-                <h3>Contáctanos</h3>
-                <p>Deja tus datos y nos pondremos en contacto contigo.</p>
-            </div>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Nombre y Apellido" required>
-                <input type="tel" name="phone" placeholder="Teléfono" required>
-                <input type="email" name="email" placeholder="Correo Electrónico" required>
-                <textarea name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar Consulta</button>
-            </form>
-        </div>
-    </section>
-
-    
-    <section class="location-and-socials">
-        <div class="location">
-            <h3>Dónde estamos ubicados</h3>
-            <p>Dirección Real, Ciudad, País.</p>
-        </div>
-        <div class="social-media">
-            <h3>Nuestras Redes</h3>
-            <a href="https://www.instagram.com"><img src="imagen/instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com"><img src="imagen/facebook-icon.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com"><img src="imagen/youtube-icon.png" alt="YouTube"></a>
-        </div>
-    </section>
-
-
-
-    <!-- Aquí va el pie de página -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="path-to-your-logo.png" alt="Green Path Solutions">
-                <p>Bienvenido a Green Path Solutions, su socio en soluciones sostenibles.</p>
-                <div class="social-media-icons">
-                    <a href="#"><img src="path-to-your-facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="path-to-your-instagram-icon.png" alt="Instagram"></a>
-                    <a href="#"><img src="path-to-your-twitter-icon.png" alt="Twitter"></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>ENLACES RAPIDOS</h4>
-                    <ul>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>NUESTROS SERVICIOS</h4>
-                    <ul>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>CONTACTO</h4>
-                    <ul>
-                        <li><a href="#">📞 0000-0000-0000</a></li>
-                        <li><a href="#">✉️ xxxxx@xxxx.com</a></li>
-                        <li><a href="#">📍 Barracas, Bs. As. Argentina</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Green Path Solutions, Foundation. All Rights reserved. <a href="#">Privacy Policy</a>.
+          <div class="step-text-box">
+            <p class="service-number">01</p>
+            <h3 class="sub-service-ti">
+                Recolección
+            </h3>
+            <p class="step-description">
+                Ayudamos a las organizaciones a alcanzar sus objetivos de gobernanza social ambiental (ESG) y sostenibilidad. Brindamos soluciones medioambientales sustentables y fortalecemos el uso eficiente de recursos.
             </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/Srecoleccion.png"
+              class="step-img"
+              alt="iPhone app preferences selection screen"
+            />
+          </div>
+          <!--! Service 2 -->
+
+          <div class="step-img-box">
+            <img
+              src="img/Scertificado.png"
+              class="step-img"
+              alt="iPhone app meal approving plan screen"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="service-number">02</p>
+            <h3 class="sub-service-ti">Certificado e Informes</h3>
+            <p class="step-description">
+                Proporcionamos certificados de reciclaje que demuestran que tus piezas informáticas han sido gestionadas de acuerdo con las regulaciones medioambientales. Ademas de informes detallados que demuestran el proceso
+            </p>
+          </div>
+          <!--! Service 3 -->
+
+          <div class="step-text-box">
+            <p class="service-number">03</p>
+            <h3 class="sub-service-ti">Soporte</h3>
+            <p class="step-description">
+                Según el plan que elijas brindamos soporte a tu empresa. Disponible por teléfono, correo electrónico y chat en línes. Resolvemos tus consultas y coordinamos recolecciones con rapidez y eficacia.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/Ssoporte.png"
+              class="step-img"
+              alt="iPhone app delivery screen"
+            />
+          </div>
+
+          <!-- ! Service 4 -->
+          <div class="step-img-box">
+            <img
+              src="img/Sdatos.png"
+              class="step-img"
+              alt="iPhone app preferences selection screen"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="service-number">04</p>
+            <h3 class="sub-service-ti">
+                Datos sensibles
+            </h3>
+            <p class="step-description">
+                Ofrecemos servicios de destrucción o recuperación segura de datos en discos duros y otros dispositivos de almacenamiento, garantizando que la información confidencial pueda o no ser recuperada para el cliente
+            </p>
+          </div>
+
+         
+          <!--! Service -->
+
+          <div class="step-text-box">
+            <p class="service-number">05</p>
+            <h3 class="sub-service-ti">Consultoria</h3>
+            <p class="step-description">
+                Brindamos consultoría para ayudarte a desarrollar estrategias y prácticas efectivas para la gestión de residuos electrónicos dentro de tu empresa.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/Sconsultoria.png"
+              class="step-img"
+              alt="iPhone app delivery screen"
+            />
+          </div>
+
+           <!--! Service -->
+
+           <div class="step-img-box">
+            <img
+              src="img/Sreaciondicionamiento.png"
+              class="step-img"
+              alt="iPhone app meal approving plan screen"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="service-number">06</p>
+            <h3 class="sub-service-ti">Reacondicionamiento</h3>
+            <p class="step-description">
+                Renovamos y optimizamos tus equipos informáticos para extender su vida útil. Evaluamos, reparamos y actualizamos componentes, garantizando un rendimiento óptimo y eficiencia.
+            </p>
+          </div>
         </div>
+      </section>
+
+    <!--! Aquí va el pie de página -->
+    <footer>
+      <div class="content">
+        <div class="izquierda">
+          <div class="arriba">
+            <img src="img/logo.png" />
+             </div>
+          <div class="abajo">
+            <div class="topico">Herramientas</div>
+            <div class="cont-lenguaje">
+              <ion-icon name="logo-figma"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+              <ion-icon name="logo-html5"></ion-icon>
+              <ion-icon name="logo-css3"></ion-icon>
+              <ion-icon name="logo-sass"></ion-icon>
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+          </div>
+        </div>
+   
+        <div class="medio">
+          <div class="topico">Nuestros links</div>
+          <div><a href="#">Servicios</a></div>
+          <div><a href="#">Nosotros</a></div>
+          <div><a href="#">Recursos</a></div>
+          <div><a href="#">Contacto</a></div>
+          <div><a href="#">Relleno</a></div>
+        </div>
+        <div class="derecha">
+          <div class="topico">Subscríbete a nuestro Newsletter</div>
+          <form action="#">
+            <input class="ingresa-t" type="text" placeholder="Ingresa tu email">
+            <input class="enviar-t" type="submit" name="" value="Enviar">
+            <div class="media-icon">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
 
 
 
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
