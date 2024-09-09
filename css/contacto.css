@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --color1: #93bb41;
+    --color2: #a6a6a6;
+    --color3: #545454;
+    --color4: #97b3a5;
+    --color5: #f1f1f1;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ 
+/* ------------------------------------------------------------------ Fondo contact */
+
+.fondo-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color3);
+}
+
+/* ------------------------------------------------------------------ Title */
+
+.contact-section {
+    margin: 70px 0 0px 0;
+}
+
+.contact-title {
+    margin: 0px 0 60px 30px;
+}
+ 
+.contact-section h1 {
+    color: var(--color1);
+    font-size: 36px;
+}
+  
+.contact-section p {
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--color2);
+}
+  
+.contact-section a {
+    cursor: pointer;
+    text-decoration: underline;
+    padding-left: 8px;
+    font-weight: 600;
+    color: var(--color5);
+}
+
+.contact-section a:hover {
+    color: var(--color1);
+}
+
+  /*-------------------------------------------------------------- Formato box contact  */
+
+.contact-form-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    max-width: 550px;
+}
+  
+/* ----------------------------------------------------------- Contenido contact form */
+.logo-contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.logo-contact img {
+  width: 40%;
+  margin-top: -15px;
+  
+}
+
+.logo-contact h2 {
+    font-weight: 400;
+    color: var(--color1);
+    font-size: 2em;
+}
+
+.form-group {
+    display: flex;
+}
+
+.input-box-contact {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 3px solid var(--color2);
+  border-image: linear-gradient(0.25turn, #5ce1e6, #bdcc4c, #ffde59);
+  border-image-slice: 1;
+  margin: 30px 0;
+}
+
+.input-box-contact label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--color2);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box-contact input:focus~label,
+.input-box-contact input:valid~label {
+    top: -5px;
+}
+
+.input-box-contact input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--color1);
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+
+.separated {
+  margin-left: 15px;
+}
+  
+/* ----------------------------------------------------------------- Select de paises */
+
+.select-pais {
+    width: 100%;
+    border-radius: 5px;
+    min-height: 30px;
+    background-color:var(--color1);
+    color: var(--color3);
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+
+/* ---------------------------------------------------------------- Cuadro comentarios */
+
+.form-group textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 80px;
+    margin: 20px 0 5px 0;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(0.25turn, #5ce1e6, #bdcc4c, #ffde59);
+    border-image-slice: 1;
+    background-color: transparent;
+    color: var(--color2);
+    padding: 10px;
+  }
+
+  /* ------------------------------------------------------------- Autorización */
+  
+  .form-group-checkbox {
+    text-align: left;
+    margin: 5px 0 20px 0;
+    
+  }
+  
+  .form-group-checkbox label {
+    font-size: 14px;
+    color: var(--color2);
+    margin-left: 4px;
+  }
+  
+  .form-group-checkbox input {
+    margin-left: 5px;
+    accent-color: var(--color1);
+    cursor: pointer;
+  }
+
+  /* ------------------------------------------------------------------- Button */
+
+  .btn-contact {
+    display: block;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--color5);
+}
+
+.btn-contact:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
+.btn-contact {
+    background-image: linear-gradient(to right top, #0cc0df, #4ecdc1, #91d5a2, #ccd793, #ffd59d);
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+/* ----------------------------------------------------------------------------- Politica de privacidad */
+  
+  .privacy-notice {
+    font-size: 12px;
+    color: var(--color2);
+    text-align: left;
+    margin: 20px 0px 50px 0;
+  }
+  
+  .privacy-notice a {
+    color: var(--color1);
+    text-decoration: none;
+  }
