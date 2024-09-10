@@ -1,0 +1,161 @@
+:root {
+    --color1: #93bb41;
+    --color2: #a6a6a6;
+    --color3: #545454;
+    --color4: #97b3a5;
+    --color5: #f1f1f1;
+}
+
+.plans-title {
+    margin: 70px 0 0 60px ;
+}
+
+.plans-title h1 {
+    color: var(--color1);
+    font-size: 36px;
+}
+
+.plans-title p {
+    margin-top: 25px;
+    font-size: 18px;
+    color: var(--color3);
+}
+
+/* --------------------------------------------- Cuadro planes */
+.pricing-plans {
+    margin: auto;
+    padding: 50px 0 90px 0;
+    max-width: 1450px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;  
+}
+
+
+.pricing-plans ul {
+    list-style-type: none;
+}
+
+.pricing-plans li span {
+    font-weight: 700;
+}
+
+/* ----------------------------------------------------- Icons */
+#primer-plan ion-icon {
+    color: var(--color4);
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+
+#segundo-plan ion-icon {
+    color: var(--color1);
+    font-size: 1.5em;
+}
+
+#tercer-plan ion-icon {
+    color: #0097b2;
+    font-size: 1.5em;
+}
+
+#primer-plan,
+#segundo-plan,
+#tercer-plan {
+    line-height: 20px;
+    align-content: flex-end;
+
+}
+
+/* --------------------------------------------------- Cajita */
+
+
+.plan-header {
+    padding:  40px 0;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+.plan-header h2 {
+    margin-bottom: 10px;
+    padding-top: 3cqb;
+    font-size: 30px;
+  }
+
+.plan-header p {
+    font-size: 13px;
+   
+}
+
+/* --------------------------------------------------- Buttons */
+
+.select-plan {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    color: var(--color5);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+  }
+
+.select-plan:hover {
+    opacity: .8;
+    border-radius: 5px;
+}
+
+
+.btn-basic,
+.plan.basic .plan-header {
+    
+    background-image: linear-gradient(to right, #8c52ff, #2f7fff, #009cff, #00b1fb, #55c1e6);
+}
+
+
+.btn-premium,
+.plan.premium .plan-header {
+    background-image: linear-gradient(to right, #8c52ff, #e92ec9, #ff3891, #ff6665, #ff914d);
+}
+
+.btn-enterprise,
+.plan.enterprise .plan-header {
+    background-image: linear-gradient(to right, #0cc0df, #4ecdc1, #91d5a2, #ccd793, #ffd59d);
+}
+
+
+/* ------------------------------------------------------------------- plan title*/
+  
+  .plan {
+    flex: 1;
+    background-color: var(--color5);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .plan:hover {
+    transform: translateY(-10px);
+  }
+  
+  .plan-features {
+    padding: 20px 30px 0 30px;
+    text-align: left;
+    height: 480px;
+  }
+  
+  .plan-features li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .pricing-plans {
+      flex-direction: column;
+    }
+    .plan-features {
+        height: 385px;
+    }
+  }

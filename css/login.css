@@ -14,34 +14,6 @@
 }
 
 
-/* ------------------------------------------------------------ Login desde el home */
-.login-home {
-    display: flex;
-    justify-content: spa;
-    align-items: center;
-}
-
-.login-home ion-icon {
-    color: var(--color4);
-    font-size: 2.5em;
-}
-
-.login-home a {
-    text-decoration: none;
-    font-size: 1.6em;
-    margin: 6px;
-    color: var(--color3);
-    
-}
-
-.login-home a:hover {
-    color: var(--color1);
-}
-
-.login-home a:visited {
-    text-decoration: none;
-}
-
 /* ------------------------------------------------------------ Fondo Login  */
 
 .contenedor-login {
@@ -49,9 +21,6 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background: url(/src/img/fondo-natural.png) no-repeat;
-    background-size:cover;
-    background-position: center; */
     background-color: var(--color3);
 }
 

@@ -4,177 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de la Fundación</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cotizaciones - Green Path Solutions</title>
+    <link rel="stylesheet" href="/css/tarifas.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo.png">
 </head>
 
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="contact-info">
-                <a href="tel:+123456789">
-                    <i class="fas fa-phone-alt"></i> Tel: +123 456 789
-                </a>
-                <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-            </div>
-            <div class="login">
-                <a href="#login">
-                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-                </a>
-            </div>
+<!-- !-------------------------------------------------------- top Bar -->
+<div class="top-bar">
+    <div class="top-bar-cont">
+      <div class="contact-mail">
+        <ion-icon name="mail-outline"></ion-icon>
+        <a href="mailto:ejemplo@dominio.com">info@gpsconsulting.com</a>
+      </div>
+      <div class="contact-wsp">
+        <ion-icon name="call-outline"></ion-icon>
+        <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">WhatsApp</a>
+      </div>
+    </div>
+    <div class="login-home">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <a class="login-pop" href="login.html">Iniciar sesión</a>
+    </div>
+  </div>
+  
+
+  <!-- !Nav -->
+  <nav>
+    <ul class="nav-links">
+      <li class="nav-li"><a href="index.html">Inicio</a></li>
+      <li class="nav-li"><a href="nosotros.html">Nosotros</a></li>
+      <li class="nav-li"><a href="servicios.html">Servicios</a></li>
+      <!-- <li><a href="soporte.html">Recursos</a></li> -->
+      <li class="nav-li"><a href="recursos.html">Recursos</a></li>
+      <li class="nav-li"><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo de la compañia" />
+      </div>
+    </div>
+
+    <!-- ! Actions -->
+    <div class="nav-actions">
+      <button id="search">
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+      <button class="theme-toggle">
+        <ion-icon  name="sunny-outline"></ion-icon>
+        <!-- <ion-icon  name="moon-outline hidden"></ion-icon> -->
+      </button>
+      <!-- Esto va a servir para hacer toggle entre ES/EN -->
+      <button class="language-toggle">ES</button>
+      <!-- Nuevo botón de idioma -->
+      <a href="tarifas.html" class="btn-tar">COTIZAR</a>
+    </div>
+  </nav>
+</header>
+
+<div class="plans-title">
+    <h1>PLANES</h1>
+    <p>Planes de gestión de residuos electrónicos adaptados a tu negocio</p>
+</div>
+
+
+
+
+<section class="pricing-plans">
+<!-- ------------------------------------------------------------------------------ Basico -->
+    <div class="plan basic" id="primer-plan">
+        <div class="plan-header">
+            <h2>Básico</h2>
+            <p>Servicio de reciclaje accesible y funcional para pymes o clientes individuales</p>
         </div>
+        <ul class="plan-features">
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Recolección:</span> Hasta 50 kg / Mensual</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Informe Básico:</span> Resumen general</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Certificado:</span> ISO 14001</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Soporte por Email:</span> Asistencia estándar</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Datos Sensibles:</span> Destrucción o recuperación segura de datos en dispositivos electrónicos antes de su reciclaje</li>
+        </ul>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="contacto.html">Contacto</li>
+        <button class="select-plan btn-basic">SELECT</button>
+    </div>
 
-            </ul>
-
-            <div class="logo">
-                <a href="#">Nombre Fundación</a>
-            </div>
-
-            <div class="nav-actions">
-                <button id="search"><i class="fas fa-search"></i></button>
-                <button id="theme-toggle"><i class="fas fa-sun"></i><i class="fas fa-moon hidden"></i></button>
-                <button id="store"><i class="fas fa-store"></i> Tarifas</button>
-            </div>
-
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-
-    <section class="pricing-plans">
-        <div class="plan basic">
-            <div class="plan-header">
-                <h2>Básico</h2>
-                <p>Servicio de reciclaje accesible y funcional para pequeñas empresas o clientes individuales</p>
-            </div>
-            <ul class="plan-features">
-                <li><i class="fas fa-check-circle"></i> Recolección Programada: Servicio de recolección de residuos
-                    electrónicos en fechas específicas.</li>
-                <li><i class="fas fa-check-circle"></i> Reciclaje Seguro: Procesamiento básico de los residuos
-                    electrónicos con métodos estándar de reciclaje.</li>
-                <li><i class="fas fa-check-circle"></i> Informe Básico de Reciclaje: Reporte que muestra el volumen de
-                    residuos procesados y su destino final.</li>
-                <li><i class="fas fa-check-circle"></i> Destrucción de Datos Sensibles: Servicio de destrucción segura
-                    de datos en dispositivos electrónicos antes de su reciclaje.</li>
-            </ul>
-            <div class="plan-price">
-                <p>A partir de <strong>US$ 500</strong> por x tiempo</p>
-            </div>
-            <button class="select-plan">SELECT</button>
+<!-- ---------------------------------------------------------------------- Premium -->
+    <div class="plan premium" id="segundo-plan">
+        <div class="plan-header">
+            <h2>Premium</h2>
+            <p>Servicio de reciclaje para empresas más avanzadas y con mayor tamaño</p>
         </div>
+         <ul class="plan-features ">
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Recolección Flexible:</span> Hasta 100 kg / 2 veces/mes</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Informe Detallado:</span> Desglose de piezas</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Certificado:</span> ISO 14001, ISO 45001</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Soporte Prioritaria:</span> Atención rápida</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Datos Sensibles:</span> Destrucción o recuperación segura de datos en dispositivos electrónicos antes de su reciclaje</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Consultoría Básica:</span> Asesoría en gestión</li>
+        </ul>
+        <button class="select-plan btn-premium">SELECT</button>
+        
+    </div>
 
-        <div class="plan premium">
-            <div class="plan-header">
-                <h2>Premium</h2>
-                <p>Servicio de reciclaje para empresas más avanzadas y con mayor tamaño</p>
-            </div>
-            <ul class="plan-features">
-                <li><i class="fas fa-check-circle"></i> Recolección Personalizada: Servicio de recolección en fechas y
-                    horarios a elección del cliente.</li>
-                <li><i class="fas fa-check-circle"></i> Reciclaje Avanzado: Procesamiento más detallado, incluyendo la
-                    recuperación de materiales valiosos.</li>
-                <li><i class="fas fa-check-circle"></i> Informe Standard de Reciclaje: Reporte que incluye un análisis
-                    más profundo del impacto ambiental y la trazabilidad de los residuos.</li>
-                <li><i class="fas fa-check-circle"></i> Asesoría en Cumplimiento Normativo: Consultoría básica para
-                    asegurar que la empresa cumpla con las normativas ambientales vigentes.</li>
-                <li><i class="fas fa-check-circle"></i> Destrucción de Datos Sensibles: Servicio de destrucción segura
-                    de datos en dispositivos electrónicos antes de su reciclaje.</li>
-            </ul>
-            <div class="plan-price">
-                <p>A partir de <strong>US$ 800</strong> por x tiempo</p>
-            </div>
-            <button class="select-plan">SELECT</button>
+<!-- ----------------------------------------------------------------------------- Empresarial -->
+    <div class="plan enterprise" id="tercer-plan">
+        <div class="plan-header">
+            <h2>Empresarial</h2>
+            <p>Servicio de reciclaje para grandes empresas y corporaciones</p>
         </div>
-
-        <div class="plan enterprise">
-            <div class="plan-header">
-                <h2>Empresarial</h2>
-                <p>Servicio de reciclaje para grandes empresas y corporaciones</p>
-            </div>
-            <ul class="plan-features">
-                <li><i class="fas fa-check-circle"></i> Recolección a Demanda: Servicio de recolección flexible,
-                    disponible en cualquier momento según las necesidades del cliente.</li>
-                <li><i class="fas fa-check-circle"></i> Reciclaje Integral: Procesamiento exhaustivo con recuperación
-                    avanzada de materiales y tratamiento especializado de componentes electrónicos.</li>
-                <li><i class="fas fa-check-circle"></i> Informe Completo y Certificación: Reporte detallado con
-                    certificaciones de reciclaje, útil para auditorías y reportes corporativos.</li>
-                <li><i class="fas fa-check-circle"></i> Asesoría Completa en Sostenibilidad: Consultoría integral para
-                    ayudar a la empresa a diseñar y adoptar políticas de sostenibilidad más amplias.</li>
-                <li><i class="fas fa-check-circle"></i> Destrucción de Datos Sensibles: Servicio de destrucción segura
-                    de datos en dispositivos electrónicos antes de su reciclaje.</li>
-            </ul>
-            <div class="plan-price">
-                <p>A partir de <strong>US$ 1000</strong> por x tiempo</p>
-            </div>
-            <button class="select-plan">SELECT</button>
-        </div>
-    </section>
-
-
-
-
-    <!-- Aquí va el pie de página -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="path-to-your-logo.png" alt="Green Path Solutions">
-                <p>Bienvenido a Green Path Solutions, su socio en soluciones sostenibles.</p>
-                <div class="social-media-icons">
-                    <a href="#"><img src="path-to-your-facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="path-to-your-instagram-icon.png" alt="Instagram"></a>
-                    <a href="#"><img src="path-to-your-twitter-icon.png" alt="Twitter"></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>ENLACES RAPIDOS</h4>
-                    <ul>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>NUESTROS SERVICIOS</h4>
-                    <ul>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                        <li><a href="#">Añadir un poco de texto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>CONTACTO</h4>
-                    <ul>
-                        <li><a href="#">📞 0000-0000-0000</a></li>
-                        <li><a href="#">✉️ xxxxx@xxxx.com</a></li>
-                        <li><a href="#">📍 Barracas, Bs. As. Argentina</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Green Path Solutions, Foundation. All Rights reserved. <a href="#">Privacy Policy</a>.</p>
-        </div>
-    </footer>
-
-
+        <ul class="plan-features">
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Recolección Prioritaria:</span> Sin límite de peso, flexible</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Informe Personalizado:</span> Analisis y recomendaciones</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Certificado Integral:</span> ISO 14001, ISO 45001, Certificación R2, E-Stewards</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Soporte por Dedicado:</span> Atención 24/7</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Datos Sensibles:</span> Destrucción o recuperación segura de datos en dispositivos electrónicos antes de su reciclaje</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Recogida de Emergencia:</span> Servicio urgente</li>
+            <li><ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Reacondicionamiento:</span> Servicio de reacondicionamiento de los mejores equipos que son devueltos al cliente</li>
+        </ul>
+        <button class="select-plan btn-enterprise">SELECT</button>
+    </div>
+</section>
 
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
