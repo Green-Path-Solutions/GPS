@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/login.css"> 
     <link rel="stylesheet" href="/css/contacto.css"> 
+    <link rel="stylesheet" href="/css/mode.css">
   </head>
 
-  <body>
+  <body class="">
     <header>
-
-      <!-- ! top Bar -->
+      <section class="all-cont">
+      <!-- --------------------------------------------------------------- top Bar -->
       <div class="top-bar">
         <div class="top-bar-cont">
           <div class="contact-mail">
@@ -22,7 +23,7 @@
           </div>
           <div class="contact-wsp">
             <ion-icon name="call-outline"></ion-icon>
-            <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">WhatsApp</a>
+            <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">+54 11 2610-9497</a>
           </div>
         </div>
         <div class="login-home">
@@ -32,42 +33,42 @@
       </div>
       
     
-      <!-- !Nav -->
-      <nav>
+      <!------------------------------------------------------------------ Nav -->
+      <nav id="navbar"   class="barra-nav">
+
         <ul class="nav-links">
-          <li class="nav-li"><a href="index.html">Inicio</a></li>
+          <li class="nav-li home"><a href="index.html">Inicio</a></li>
+          <div class="nav-options">
           <li class="nav-li"><a href="nosotros.html">Nosotros</a></li>
           <li class="nav-li"><a href="servicios.html">Servicios</a></li>
-          <!-- <li><a href="soporte.html">Recursos</a></li> -->
-          <li class="nav-li"><a href="recursos.html">Recursos</a></li>
+          <li class="nav-li"><a href="recursos.html">Tienda</a></li>
           <li class="nav-li"><a href="contacto.html">Contacto</a></li>
         </ul>
+      </div>
 
-        <div class="logo">
-          <img src="/img/logo.png" alt="Logo de la compañia" />
-          </div>
+      <div class="logo">
+        <img src="/img/logo.png" alt="Logo de la compañia" />
+        </div>
+      </div>
+       
+
+        <!-----------------------------------------------------------  Actions -->
+        <div class="nav-actions"> 
+          <!-- <button id="search"><ion-icon name="search-outline"></ion-icon></button> -->
+          <button id="bag-handle"><ion-icon name="bag-handle-outline"></ion-icon></button>
+          
+          <button class="sun-theme" id="sun-mode"><ion-icon  name="sunny-outline"></ion-icon></button>
+          <button class="moon-theme" id="moon-mode"><ion-icon name="moon-outline"></ion-icon></button>
+
+          <!--? Esto va a servir para hacer toggle entre ES/EN -->
+          <button class="language-toggle" id="btn-es">ENG</button>
+
+          <a href="tarifas.html" class="btn-tar">Cotizar</a>
         </div>
 
-        <!-- ! Actions -->
-        <div class="nav-actions">
-          <button id="search">
-            <ion-icon name="search-outline"></ion-icon>
-          </button>
-          <button class="theme-toggle">
-            <ion-icon  name="sunny-outline"></ion-icon>
-            <!-- <ion-icon  name="moon-outline hidden"></ion-icon> -->
-          </button>
-          <!-- Esto va a servir para hacer toggle entre ES/EN -->
-          <button class="language-toggle">ES</button>
-          <!-- Nuevo botón de idioma -->
-          <a href="tarifas.html" class="btn-tar">Tarifas</a>
-        </div>
-
-        <!-- ! nose que es esto revisar despues -->
-        <!-- <button class="nav-toggle" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button> -->
+        <button class="hamburger" id="hamburger-btn"><ion-icon name="menu-outline"></ion-icon></button>
       </nav>
+    </section>
     </header>
 
     <main>
@@ -88,7 +89,7 @@
        <!-- !Quienes somos -->
       <section class="quienes-somos">
         <div class="text-section">
-          <h1><span>Somos</span> Green Path Solutions</h1>
+          <h1>Somos Green Path Solutions</h1>
           <p>
             Ayudamos a las organizaciones a 
             alcanzar sus objetivos de gobernanza 
@@ -107,7 +108,7 @@
            <div class="cont-quienes-somos">
              <img class="img-historia" src="/img/historia.png" alt="Imagen de reunion de trabajo">
              <div class="cont-text">
-               <p class="titulo-historia"><span>Nuestra</span> Historia</p>
+               <p class="titulo-historia"><span>Nuestra historia</p>
                <p class="parrafo-historia">Con una profunda pasión por el medio ambiente, nacimos para transformar residuos electrónicos en recursos valiosos. A lo largo de los años, hemos crecido y evolucionado, convirtiéndonos en un aliado para empresas que buscan prácticas más sostenibles.</p>
                <a class="link-historia" href="nosotros.html">>> leer más</a>
               </div>
@@ -117,7 +118,7 @@
            <div class="cont-quienes-somos">
               <img class="img-historia" src="/img/servicios.png" alt="Imagen de reunion de trabajo">
              <div class="cont-text">
-               <p class="titulo-historia"><span>Nuestro</span> Servicios</p>
+               <p class="titulo-historia"><span>Nuestros servicios</p>
                <p class="parrafo-historia">Ofrecemos soluciones integrales de reciclaje electrónico y soporte, adaptadas a las necesidades de pequeñas y grandes empresas. Desde la recolección hasta el reciclaje, garantizamos un proceso eficiente, seguro y ecológico.
               </p>
               <a class="link historia" href="nosotros.html">>> leer más</a>
@@ -128,7 +129,7 @@
            <div class="cont-quienes-somos">
              <img class="img-historia" src="/img/propuesta.png" alt="Imagen de reunion de trabajo">
              <div class="cont-text">
-               <p class="titulo-historia"><span>Nuestra</span> Propuesta</p>
+               <p class="titulo-historia"><span>Nuestra propuesta</p>
                <p class="parrafo-historia">Nos comprometemos a reducir el impacto ambiental de nuestros clientes, brindando un servicio de reciclaje electrónico que transforma residuos en oportunidades, apoyando a las empresas en su camino hacia la sostenibilidad.</p>
                <a class="link historia" href="nosotros.html">>> leer más</a>
               </div>
@@ -169,55 +170,7 @@
         </div>
       </div>
         </section>
-        
-        <!-- <section id="slogan-section">
-      <div class="slogan-image">
-        <div class="slogan-text">
-          <p>Texto del eslogan o mensaje aquí.</p>
-        </div>
-        <div class="info-boxes">
-          <div class="info-box mission">
-            <h3>Misión</h3>
-            <p>Descripción breve de la misión.</p>
-          </div>
-          <div class="info-box vision">
-            <h3>Visión</h3>
-            <p>Descripción breve de la visión.</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section id="info-section">
-      <div class="info-container">
-        <div class="info-box">
-          <div class="info-box-content">
-            <p>Texto en el centro</p>
-          </div>
-        </div>
-        <div class="info-image">
-          <img src="imagen/img.jfif" alt="Descripción de la imagen" />
-          <div class="info-boxes">
-            <div class="info-box">
-              <h3>Título 1</h3>
-              <a href="#" class="btn-see-more">Ver más</a>
-            </div>
-            <div class="info-box">
-              <h3>Título 2</h3>
-              <a href="#" class="btn-see-more">Ver más</a>
-            </div>
-            <div class="info-box">
-              <h3>Título 3</h3>
-              <a href="#" class="btn-see-more">Ver más</a>
-            </div>
-            <div class="info-box">
-              <h3>Título 4</h3>
-              <a href="#" class="btn-see-more">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+     
     
     <!-- ? Logos -->
     <div class="clientes-section">
@@ -246,45 +199,6 @@
       </div>
     </div>
     
-    <!-- ? Noticias  -->
-    <!-- <div class="news-section">
-      <h2>Noticias</h2>
-      <div class="news-container">
-        <div class="news-item">
-          <img src="image1.jpg" alt="Noticia 1" />
-          <div class="news-content">
-            <span class="news-date">Agosto 2, 2024</span>
-            <h3>
-              Alianza Estratégica con Grandes Empresas para Reducir Residuos
-              Electrónicos
-            </h3>
-            <a href="#" class="news-button">VER MÁS</a>
-          </div>
-        </div>
-        <div class="news-item">
-          <img src="image2.jpg" alt="Noticia 2" />
-          <div class="news-content">
-            <span class="news-date">Junio 22, 2024</span>
-            <h3>
-              Campaña de Concientización: La Importancia del Reciclaje
-              Electrónico en las Empresas
-            </h3>
-            <a href="#" class="news-button">VER MÁS</a>
-          </div>
-        </div>
-        <div class="news-item">
-          <img src="image3.jpg" alt="Noticia 3" />
-          <div class="news-content">
-            <span class="news-date">Abril 3, 2024</span>
-            <h3>
-              Expansión de Servicios: Ahora Atendemos a Más Regiones con
-              Soluciones Ecológicas
-            </h3>
-            <a href="#" class="news-button">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
 
     <!-- ! Aquí va el pie de página -->
@@ -336,7 +250,12 @@
 
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/app.js"></script>
+    <script src="/mode.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
+
+
+
+</body>
 </html>

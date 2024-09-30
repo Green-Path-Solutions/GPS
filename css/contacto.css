@@ -197,7 +197,7 @@
     outline: none;
     cursor: pointer;
     font-size: 1.6em;
-    color: var(--color5);
+    color: var(--color3);
 }
 
 .btn-contact:hover {
