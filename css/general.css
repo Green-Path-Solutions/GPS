@@ -84,6 +84,25 @@ body {
   color: var(--color1);
 }
 
+/* ?----------------------------------------------------- Topbar responsive */
+
+/* @media screen and (max-width: 1500px) {
+  .top-bar {
+    background-color: #0097b2;
+   padding-left: 4em;
+  }
+
+  .top-bar p,
+  .login-home p {
+    display: none;
+  }
+  .login-home {
+
+    cursor: pointer;
+  }
+} */
+
+
 /* ------------------------------------------------------------ Login desde el home */
 .login-home {
   display: flex;
@@ -92,15 +111,15 @@ body {
 
 .login-home ion-icon {
   color: var(--color4);
-  font-size: 2.5em;
+  font-size: 2.8em;
+  cursor: pointer;
 }
 
 .login-home a {
   text-decoration: none;
   font-size: 1.6em;
-  margin: 6px;
   color: var(--color3);
-  
+  margin: 0 10px;
 }
 
 .login-home a:hover {
@@ -120,6 +139,8 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   position: relative;
+  background-color: var(--color4);
+  color: var(--color5);
 }
 
 nav .nav-links {
@@ -136,13 +157,6 @@ nav .nav-links li {
 }
 
 
-.barra-nav {
-  background-color: #82a192;
-  color: var(--color5);
-  position: relative;
-  
-}
-
 .barra-nav ul {
   margin: unset;
   padding: unset;
@@ -154,7 +168,6 @@ nav .nav-links li {
   display: flex;
 }
 
-
 .barra-nav a {
   padding: 1em;
   color: inherit;
@@ -162,14 +175,15 @@ nav .nav-links li {
   display: inline-block;
 }
 
-.nav-links .home {
-  background-color: var(--color4);
+.nav-links .home,
+.barra-nav .home a:hover {
+  background-color: #84a092;
   border-radius: 20px;
-  
 }
 
+
 .barra-nav a:hover {
-  background:  var(--color4);
+  background:  #a5c4b4;
   border-radius: 20px;
 }
 
@@ -192,10 +206,22 @@ nav .nav-links li {
 
 /* ?---------------------------------------------------------------- Nav responsive */
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
 
   .barra-nav .hamburger {
     display: block;
+    text-align: center;
+  }
+
+  .barra-nav {
+    display: flex;
+    justify-content: 0;
+    padding: 0 .8em;
+  }
+
+  .nav-links .home {
+    background-color: #0097b2;
+
   }
 
   .barra-nav.open ul {
@@ -218,12 +244,20 @@ nav .nav-links li {
     display: none;
   }
 
-}
+  
+  .logo {
+    opacity: 0;
+  }
+  
+  nav .nav-actions {
+    display: none;
+    opacity: 0;
+  }
 
 
-/* .logo {
-  display: none;
+
 } */
+
 
 
 /* ---------------------------------------------------------------------- Nav logo */
@@ -285,6 +319,8 @@ nav .nav-actions .btn-tar {
   font-size: 1.4rem;
   /* font-weight: bold; */
   color: var(--color5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
 }
 nav .nav-actions .btn-tar:hover {
   background-image: linear-gradient(to right bottom, #7ed957, #0097b2);
@@ -302,7 +338,25 @@ nav .nav-actions .btn-tar:hover {
   display: none;
 }
 
-/* ------------------------------------------------------------------ */
+/* ?------------------------------------------------------------- Whatsapp */
+
+.wsp-flotante {
+  display: block;
+  position: fixed;
+  top: 62em;
+  right: 7em;
+  opacity: .8;
+  top: 1;
+  z-index: 90;
+}
+
+.wsp-flotante img {
+  height: 6em;
+  cursor: pointer; 
+}
+
+
+/* ------------------------------------------------------------------ Footer */
 footer {
   width: 100%;
   bottom: 0;
@@ -411,4 +465,3 @@ footer .content .derecha .media-icon a:hover {
 }
 
 /*# sourceMappingURL=general.css.map */
-

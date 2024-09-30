@@ -31,11 +31,15 @@ body.dark .login-home a:hover {
 
 /* ------------------------------------------------------ format navbar */
 
-/* body.dark #navbar {
-    filter: invert(1)
-} */
+body.dark #navbar {
+    background-color: #82a192;
+}
 
-
+body.dark .nav-links .home,
+body.dark .barra-nav .home a:hover {
+    background-color: #5d8f75;
+}
+  
 /* ----------------------------------------------------------- */
 
 body.dark .text-section {
