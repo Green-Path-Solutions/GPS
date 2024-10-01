@@ -1,18 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 :root {
     --color1: #93bb41;
     --color2: #a6a6a6;
     --color3: #545454;
     --color4: #97b3a5;
 }
-
-* {
-    font-family: "Open Sans", sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
 
 /* ------------------------------------------------------------ Fondo Login  */
 

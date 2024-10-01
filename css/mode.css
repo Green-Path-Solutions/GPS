@@ -19,7 +19,7 @@ body.dark .top-bar {
 }
 
 body.dark .top-bar .top-bar-cont .contact-mail a,
-body.dark .top-bar .top-bar-cont .contact-wsp a,
+body.dark .top-bar .top-bar-cont .contact-call a,
 body.dark .login-home a {
     color: var(--color4);
 }
