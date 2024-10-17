@@ -1,111 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPS - Sobre Nosotros</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/mode.css">
+    <link rel="icon" href="/src/img/logo-sinTitulo.png " >
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de la Fundación</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
 
-<body>
+  <body class="">
     <header>
-        <div class="top-bar">
-            <div class="contact-info">
-                <a href="tel:+123456789">
-                    <i class="fas fa-phone-alt"></i> Tel: +123 456 789
-                </a>
-                <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-            </div>
-            <div class="login">
-                <a href="#login">
-                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-                </a>
-            </div>
+      <section class="all-cont">
+      <!-- *--------------------------------------------------------------- top Bar -->
+      <div class="top-bar">
+        <div class="top-bar-cont">
+          <div class="contact-mail">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:ejemplo@dominio.com"><p>info@gpsconsulting.com</p></a>
+          </div>
+          <div class="contact-call">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="https://wa.me/+123456789" target="_blank" class="whatsapp"><p>+54 11 2610-9497</p></a>
+          </div>
+        </div>
+        <div class="login-home">
+          <ion-icon id="login-push" class="log-res" name="person-circle-outline"></ion-icon>
+          <a class="login-pop" href="login.html"><p>Iniciar sesión</p></a>
+        </div>
+      </div>
+      
+    
+      <!-- * -------------------------------------------------------------- Nav -->
+      <nav id="navbar"   class="barra-nav">
+
+        <ul class="nav-links">
+          <li class="nav-li home"><a href="index.html">Inicio</a></li>
+          <div class="nav-options">
+          <li class="nav-li"><a href="nosotros.html">Nosotros</a></li>
+          <li class="nav-li"><a href="servicios.html">Servicios</a></li>
+          <li class="nav-li"><a href="ecommerce.html">Tienda</a></li>
+          <li class="nav-li"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="logo">
+        <img src="/img/logo.png" alt="Logo de la compañia" />
+        </div>
+      </div>
+       
+
+        <!-- *---------------------------------------------------------  Actions -->
+        <div class="nav-actions"> 
+          <!-- <button id="search"><ion-icon name="search-outline"></ion-icon></button> -->
+          <button id="bag-handle"><ion-icon name="bag-handle-outline"></ion-icon></button>
+          
+          <button class="sun-theme" id="sun-mode"><ion-icon  name="sunny-outline"></ion-icon></button>
+          <button class="moon-theme" id="moon-mode"><ion-icon name="moon-outline"></ion-icon></button>
+
+          <!--? Esto va a servir para hacer toggle entre ES/EN -->
+          <button class="language-toggle" id="btn-es">ENG</button>
+
+          <a href="tarifas.html" class="btn-tar">Cotizar</a>
         </div>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="contacto.html">Contacto</li>
-
-            </ul>
-
-            <div class="logo">
-                <a href="#">Nombre Fundación</a>
-            </div>
-
-            <div class="nav-actions">
-                <button id="search"><i class="fas fa-search"></i></button>
-                <button id="theme-toggle"><i class="fas fa-sun"></i><i class="fas fa-moon hidden"></i></button>
-                <a href="tarifas.html" class="btn-tarifas"><i class="fas fa-store"></i> Tarifas</a>
-            </div>
-
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
+        <button class="hamburger" id="hamburger-btn"><ion-icon name="menu-outline"></ion-icon></button>
+      </nav>
+    </section>
     </header>
 
-    
-    <section class="nosotros-header">
-        <div class="header-content">
-            <img src="imagen/descarga.jfif" alt="Imagen Central">
-        </div>
-    </section>
+<!-- ! Titulo, texto e imagen -->
 
-   
     <section class="nosotros-title-section">
-        <div class="title-container">
-            <h2>Sobre Nosotros</h2>
-            <p class="subtitle">Un breve subtítulo aquí</p>
+        <div class="cont-nos">
+            <div class="cont-text-nos">
+                <h2 class="secondary-title">
+                    <span>Sobre</span> Green PAth solutions
+                </h2>
+                <div class="box-li"></div>
+                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras y sostenibles en el reciclaje de residuos electrónicos. Con un equipo comprometido y una sólida experiencia en el sector, trabajamos junto a empresas de todos los tamaños para reducir su impacto ambiental y fomentar una economía circular. Nuestro enfoque se basa en la excelencia operativa, la responsabilidad ecológica y el servicio personalizado, brindando a nuestros clientes la confianza de estar colaborando con un líder en sostenibilidad. Nos apasiona transformar residuos en recursos y construir un futuro más limpio y verde para todos.</p>
+            </div>
+            <div class="cont-img-nos">
+            <img src="/img/nosotros.jpg" alt="Imagen de  nuestra empresa">
+            </div>
         </div>
-        <div class="info-box-rounded">
-            <p>Información relevante sobre la empresa, historia o valores.</p>
+
+<!-- ! Por que elegirnos -->
+
+        <div class="beneficios">
+            <div class="cont-why">
+                <div class="cont-box">
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <a>LÍDERES EN RECICLAJE <br>E-WASTE</a>
+                </div>
+                <div class="cont-box">
+                    <ion-icon name="checkbox-outline"></ion-icon>
+                    <a>COMPLETA OFERTA <br> DE SERVICIOS</a>
+                </div>
+                <div class="cont-box">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <a>ATENCIÓN Al cliente <br>
+                        PERSONALIZADA</a>
+             </div>
         </div>
     </section>
+
+
+       
 
     
-    <section class="nosotros-info-section">
-        <div class="info-left">
-            <p>Texto informativo alineado a la izquierda.</p>
-        </div>
-        <div class="info-right">
-            <p>Texto informativo alineado a la derecha.</p>
-        </div>
-    </section>
+    <section class="nosotros-info-section"> 
+        <h2>NUESTROS PRINCIPIOS</h2>
+        <div class="cartas-grid">
+            <div class="carta">
+                <div class="cara frente">
+                    <img src="/img/mision.png">
+                    <h3>MISIóN</h3>
+                </div>
+                <div class="cara atras">
+                    <h3>MISIóN</h3>
+                    <p>
+                        Nuestra misión es ofrecer soluciones personalizadas en reciclaje electrónico, reduciendo la huella de carbono y promoviendo la economía circular y la responsabilidad ecológica. Transformamos residuos en recursos valiosos, cumpliendo con las normativas ambientales.</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="cara frente">
+                        <img src="/img/vision.png">
+                        <h3>visión</h3>
+                    </div>
+                    <div class="cara atras">
+                        <h3>visión</h3>
+                        <p>Queremos ser líderes en reciclaje electrónico regional, destacando por nuestra innovación y compromiso con la sostenibilidad. Buscamos ser el socio preferido para empresas que desean un futuro más verde y un reciclaje responsable.</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="cara frente">
+                        <img src="/img/valores.png">
+                        <h3>valores</h3>
+                    </div>
+                    <div class="cara atras">
+                        <h3>valores</h3>
+                        <p>Nuestros valores incluyen sostenibilidad, innovación ecológica, responsabilidad ambiental, transparencia en nuestras prácticas, adaptabilidad a nuevas tecnologías verdes, colaboración para soluciones eco-amigables y respeto por el medio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
 
-   
-    <section class="nosotros-photos-section">
-        <div class="photo-item">
-            <img src="imagen/foto1.jpg" alt="Foto 1">
-        </div>
-        <div class="photo-item">
-            <img src="imagen/foto2.jpg" alt="Foto 2">
-        </div>
-        <div class="photo-item">
-            <img src="imagen/foto3.jpg" alt="Foto 3">
-        </div>
-    </section>
-
-    <!-- Misión y Visión -->
-    <section class="nosotros-mission-vision">
-        <div class="mission">
-            <h3>Misión</h3>
-            <p>Nuestra misión es...</p>
-        </div>
-        <div class="vision">
-            <h3>Visión</h3>
-            <p>Nuestra visión es...</p>
-        </div>
-    </section>
 
 
     <!--! Aquí va el pie de página -->
@@ -130,11 +177,11 @@
      
           <div class="medio">
             <div class="topico">Nuestros links</div>
-            <div><a href="#">Servicios</a></div>
-            <div><a href="#">Nosotros</a></div>
-            <div><a href="#">Recursos</a></div>
-            <div><a href="#">Contacto</a></div>
-            <div><a href="#">Relleno</a></div>
+            <div><a href="servicios.html">Servicios</a></div>
+            <div><a href="nosotros.html">Nosotros</a></div>
+            <div><a href="ecommerce.html">Outlet</a></div>
+            <div><a href="contacto.html">Contacto</a></div>
+            <div><a href="tarifas.html">Cotizar</a></div>
           </div>
           <div class="derecha">
             <div class="topico">Subscríbete a nuestro Newsletter</div>
@@ -155,7 +202,12 @@
 
 
 
-    <script src="script.js"></script>
+      <script type="module" src="/script.js"></script>
+      <script type="module" src="/main.js"></script>
+      <script type="module" src="/app.js"></script>
+      <script src="/mode.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

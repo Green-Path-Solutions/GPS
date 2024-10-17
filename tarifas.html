@@ -2,67 +2,76 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotizaciones - Green Path Solutions</title>
-    <link rel="stylesheet" href="/css/tarifas.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPS - Servicios</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/general.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="src/img/logo-sinTitulo.png">
-</head>
+    <link rel="stylesheet" href="/css/tarifas.css" />
+    <link rel="stylesheet" href="/css/mode.css">
+    <link rel="icon" href="/src/img/logo-sinTitulo.png " >
+  </head>
 
-<body>
-<!-- !-------------------------------------------------------- top Bar -->
-<div class="top-bar">
-    <div class="top-bar-cont">
-      <div class="contact-mail">
-        <ion-icon name="mail-outline"></ion-icon>
-        <a href="mailto:ejemplo@dominio.com">info@gpsconsulting.com</a>
+
+  <body class="">
+    <header>
+      <section class="all-cont">
+      <!-- *--------------------------------------------------------------- top Bar -->
+      <div class="top-bar">
+        <div class="top-bar-cont">
+          <div class="contact-mail">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:ejemplo@dominio.com"><p>info@gpsconsulting.com</p></a>
+          </div>
+          <div class="contact-call">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="https://wa.me/+123456789" target="_blank" class="whatsapp"><p>+54 11 2610-9497</p></a>
+          </div>
+        </div>
+        <div class="login-home">
+          <ion-icon id="login-push" class="log-res" name="person-circle-outline"></ion-icon>
+          <a class="login-pop" href="login.html"><p>Iniciar sesión</p></a>
+        </div>
       </div>
-      <div class="contact-wsp">
-        <ion-icon name="call-outline"></ion-icon>
-        <a href="https://wa.me/+123456789" target="_blank" class="whatsapp">WhatsApp</a>
+      
+    
+      <!-- * -------------------------------------------------------------- Nav -->
+      <nav id="navbar"   class="barra-nav">
+
+        <ul class="nav-links">
+          <li class="nav-li home"><a href="index.html">Inicio</a></li>
+          <div class="nav-options">
+          <li class="nav-li"><a href="nosotros.html">Nosotros</a></li>
+          <li class="nav-li"><a href="servicios.html">Servicios</a></li>
+          <li class="nav-li"><a href="ecommerce.html">Tienda</a></li>
+          <li class="nav-li"><a href="contacto.html">Contacto</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="login-home">
-      <ion-icon name="person-circle-outline"></ion-icon>
-      <a class="login-pop" href="login.html">Iniciar sesión</a>
-    </div>
-  </div>
-  
 
-  <!-- !Nav -->
-  <nav>
-    <ul class="nav-links">
-      <li class="nav-li"><a href="index.html">Inicio</a></li>
-      <li class="nav-li"><a href="nosotros.html">Nosotros</a></li>
-      <li class="nav-li"><a href="servicios.html">Servicios</a></li>
-      <!-- <li><a href="soporte.html">Recursos</a></li> -->
-      <li class="nav-li"><a href="recursos.html">Recursos</a></li>
-      <li class="nav-li"><a href="contacto.html">Contacto</a></li>
-    </ul>
-
-    <div class="logo">
-      <img src="/img/logo.png" alt="Logo de la compañia" />
+      <div class="logo">
+        <img src="/img/logo.png" alt="Logo de la compañia" />
+        </div>
       </div>
-    </div>
+       
 
-    <!-- ! Actions -->
-    <div class="nav-actions">
-      <button id="search">
-        <ion-icon name="search-outline"></ion-icon>
-      </button>
-      <button class="theme-toggle">
-        <ion-icon  name="sunny-outline"></ion-icon>
-        <!-- <ion-icon  name="moon-outline hidden"></ion-icon> -->
-      </button>
-      <!-- Esto va a servir para hacer toggle entre ES/EN -->
-      <button class="language-toggle">ES</button>
-      <!-- Nuevo botón de idioma -->
-      <a href="tarifas.html" class="btn-tar">COTIZAR</a>
-    </div>
-  </nav>
-</header>
+        <!-- *---------------------------------------------------------  Actions -->
+        <div class="nav-actions"> 
+          <!-- <button id="search"><ion-icon name="search-outline"></ion-icon></button> -->
+          <button id="bag-handle"><ion-icon name="bag-handle-outline"></ion-icon></button>
+          
+          <button class="sun-theme" id="sun-mode"><ion-icon  name="sunny-outline"></ion-icon></button>
+          <button class="moon-theme" id="moon-mode"><ion-icon name="moon-outline"></ion-icon></button>
+
+          <!--? Esto va a servir para hacer toggle entre ES/EN -->
+          <button class="language-toggle" id="btn-es">ENG</button>
+
+          <a href="tarifas.html" class="btn-tar">Cotizar</a>
+        </div>
+
+        <button class="hamburger" id="hamburger-btn"><ion-icon name="menu-outline"></ion-icon></button>
+      </nav>
+    </section>
+    </header>
 
 <div class="plans-title">
     <h1>PLANES</h1>
@@ -145,7 +154,55 @@
     </div>
 </section>
 
+ <!--! Aquí va el pie de página -->
+ <footer>
+    <div class="content">
+      <div class="izquierda">
+        <div class="arriba">
+          <img src="img/logo.png" />
+           </div>
+        <div class="abajo">
+          <div class="topico">Herramientas</div>
+          <div class="cont-lenguaje">
+            <ion-icon name="logo-figma"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-html5"></ion-icon>
+            <ion-icon name="logo-css3"></ion-icon>
+            <ion-icon name="logo-sass"></ion-icon>
+            <ion-icon name="logo-javascript"></ion-icon>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="medio">
+        <div class="topico">Nuestros links</div>
+        <div><a href="#">Servicios</a></div>
+        <div><a href="#">Nosotros</a></div>
+        <div><a href="#">Recursos</a></div>
+        <div><a href="#">Contacto</a></div>
+        <div><a href="#">Relleno</a></div>
+      </div>
+      <div class="derecha">
+        <div class="topico">Subscríbete a nuestro Newsletter</div>
+        <form action="#">
+          <input class="ingresa-t" type="text" placeholder="Ingresa tu email">
+          <input class="enviar-t" type="submit" name="" value="Enviar">
+          <div class="media-icon">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
     <script src="script.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/app.js"></script>
+    <script src="/mode.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
