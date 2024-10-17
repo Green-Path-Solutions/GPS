@@ -1,4 +1,17 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --color1: #93bb41;
+  --color2: #a6a6a6;
+  --color3: #545454;
+  --color4: #97b3a5;
+  --color5: #f1f1f1;
+  --color6: #e9eaed;
+  --color7: #4e4e4e;
+  --color8: #6d8d6e;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,244 +21,364 @@
 
 html {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* Estilos para la top-bar */
+body {
+  background-color: var(--color5);
+}
+
+/* ----------------------------------------------------- Section header all-cont*/
+.all-cont {
+  position: fixed;
+  z-index: 99;
+  top: -.2vh;
+}
+
+/* -------------------------------------------------- Estilos para la top-bar */
 .top-bar {
-  background-color: #e9eaed;
-  color: #333;
-  padding: 1.2rem 15rem;
+  background-color: var(--color6);
+  color: var(--color3);
+  padding: 1rem 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.contact-call {
+  padding-left: 3em;
+}
+
 .top-bar .top-bar-cont {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.top-bar .top-bar-cont .contact-mail {
+
+.top-bar .top-bar-cont .contact-mail,
+.top-bar .top-bar-cont .contact-call {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.top-bar .top-bar-cont .contact-mail ion-icon {
-  background-color: #97b3a5;
+
+.top-bar .top-bar-cont .contact-mail ion-icon,
+.top-bar .top-bar-cont .contact-call ion-icon {
+  background-color: var(--color4);
   padding: 0.5rem;
   border-radius: 50%;
-  font-size: 1.2rem;
-  color: #fff;
+  font-size: 1.5rem;
+  color: var(--color5);
+  cursor: pointer; /*? prox js*/
+
 }
-.top-bar .top-bar-cont .contact-mail a {
+.top-bar .top-bar-cont .contact-mail a,
+.top-bar .top-bar-cont .contact-call a {
   text-decoration: none;
-  font-size: 1.4rem;
-  color: #333;
+  font-size: 1.5rem;
+  color: var(--color2); 
   margin: 0 10px;
 }
-.top-bar .top-bar-cont .contact-wsp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.top-bar .top-bar-cont .contact-wsp ion-icon {
-  background-color: #97b3a5;
-  padding: 0.5rem;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  color: #fff;
-}
-.top-bar .top-bar-cont .contact-wsp a {
-  text-decoration: none;
-  font-size: 1.4rem;
-  color: #333;
-  margin: 0 10px;
-}
-.top-bar .login {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.top-bar .login ion-icon {
-  background-color: #97b3a5;
-  padding: 0.5rem;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  color: #fff;
-}
-.top-bar .login a {
-  text-decoration: none;
-  font-size: 1.4rem;
-  color: #333;
-  margin: 0 10px;
+
+.top-bar .top-bar-cont .contact-mail a:hover,
+.top-bar .top-bar-cont .contact-call a:hover {
+  color: var(--color1);
 }
 
 /* ------------------------------------------------------------ Login desde el home */
 .login-home {
   display: flex;
-  justify-content: spa;
   align-items: center;
 }
 
 .login-home ion-icon {
   color: var(--color4);
-  font-size: 2.5em;
+  font-size: 2.8em;
+  cursor: pointer;
 }
 
 .login-home a {
   text-decoration: none;
-  font-size: 1.6em;
-  margin: 6px;
-  color: var(--color3);
-  
+  font-size: 1.7em;
+  color: var(--color2);
+  margin: 0 10px;
 }
 
 .login-home a:hover {
   color: var(--color1);
+  transform: scale(1.1);
+  transition: all 300ms ease; 
 }
 
 .login-home a:visited {
   text-decoration: none;
 }
 
-/* ------------------------------------------------------------------------------------- */
-nav {
-  border: 2px solid #bccc48;
-  color: #666;
+/* ------------------------------------------------------------------------------------- Nav */
+.barra-nav {
+  padding: 0 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  max-width: 1200rem;
-  margin: 0 auto;
   position: relative;
+  background-color: var(--color4);
+  color: var(--color5);
+
 }
-nav .nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5em;
-  cursor: pointer;
-}
+
 nav .nav-links {
   font-size: 1.4rem;
   text-transform: uppercase;
-  list-style: none;
-  margin: 0;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-  position: relative;
+  position: relative; 
 }
+
 nav .nav-links li {
-  padding: 0 1.8rem;
+  padding: 0 1.3rem;
+  /* font-weight: 600; */
 }
-nav .nav-links a {
-  color: #131407;
+
+
+.barra-nav ul {
+  margin: unset;
+  padding: unset;
+  list-style: none;
+  display: flex;
+
+}
+
+.barra-nav .nav-options {
+  display: flex;
+}
+
+.barra-nav a {
+  padding: 1em;
+  color: inherit;
   text-decoration: none;
-  transition: all 0.3 ease;
+  display: inline-block;
 }
-nav .nav-links a:hover {
-  text-shadow: 1px 0 0 #97b3a5;
-  color: #97b3a5;
+
+.nav-links .home,
+.barra-nav .home a:hover {
+  background-color: #84a092;
+  border-radius: 20px;
 }
+
+
+.barra-nav a:hover {
+  background:  #a5c4b4;
+  border-radius: 20px;
+}
+
+/* ?--------------------------------------------------------------------Nav hamburguer */
+.barra-nav .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: unset;
+  background: unset;
+  display: none;
+  cursor: pointer;
+}
+
+.barra-nav .hamburger ion-icon {
+  color: var(--color5);
+  font-size: 2em;
+  padding: 0.5rem;
+}
+
+/* !------------------------------------------------------------------- Header Responsive */
+/* ?---------------------------------------------------------------- Nav responsive */
+@media screen and (max-width: 768px) {
+
+  .barra-nav .hamburger {
+    display: block;
+    padding-top: 1%;
+  }
+
+  .barra-nav {
+    display: block;
+    padding: 0px ;
+   
+  }
+
+  .barra-nav.open ul {
+    display: block;
+  }
+
+  nav .nav-links li {
+    padding: 0rem;
+  }
+
+  .nav-links .home,
+.barra-nav .home a:hover {
+  border-radius: 0px;
+}
+
+
+.barra-nav a:hover {
+  border-radius: 0px;
+}
+  
+  .barra-nav.open .nav-options {
+    display: block;
+  }
+
+  .barra-nav.open a {
+    display: block;
+  }
+
+  .barra-nav .nav-options {
+    display: none;
+  }
+  
+  .logo img {
+   position: absolute;
+   top: -8em;
+  }
+ 
+  nav .nav-actions {
+    display: none;
+  }
+
+  nav .nav-actions .btn-tar,
+  nav .nav-actions button {
+    display: none;
+  }
+
+  .top-bar {
+    padding-left: 2em; 
+    height: 10em;
+    width: 50vh;
+    display: flex;
+    /* background-color: transparent; */
+    /* flex-direction: row;  */
+    /* flex-direction: column; */
+    /* align-items: flex-end; */
+    /* position: absolute; */
+    /* top: 60px; */
+    /* right: 0; */
+    /* z-index: 10; */
+    /* padding: 10px 20px; */
+    /* opacity: 0; */
+  } 
+
+  .top-bar .top-bar-cont .contact-mail ion-icon,
+.top-bar .top-bar-cont .contact-call ion-icon {
+  display: none;
+}
+
+  .top-bar p,
+  .login-home p {
+    display: none;
+  }
+ 
+ /* .contact-call {
+     padding-left: 1em; 
+  }*/
+
+  .login-home ion-icon{
+     /* padding-left: 1.2em;  */
+     display: none;
+   }
+}
+/* ---------------------------------------------------------------------- Nav logo */
+
 nav .logo {
   justify-content: center;
   display: flex;
   align-items: center;
 }
+
 nav .logo .logo-cont {
   display: inline-block;
   position: relative;
   padding-bottom: 10rem;
   padding-right: 7rem;
 }
+
 nav .logo img {
   height: 7rem;
 }
+
+/* ------------------------------------------------------------------------ Nav actions*/
 nav .nav-actions {
-  margin-left: 20rem;
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 10rem;
 }
+
 nav .nav-actions button {
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   background: none;
-  color: #545454;
-  font-size: 2.4rem;
+  color: var(--color5);
+  font-size: 2.2rem;
   margin-left: 15px;
   cursor: pointer;
 }
+
 nav .nav-actions button:hover {
-  color: #252525;
+  color: #a7e036;
+  transform: scale(1.1);
+  transition: all 300ms ease; 
 }
-nav .nav-actions .theme-toggle {
-  background: none;
-  color: #545454;
-  font-size: 2.4rem;
-  margin-left: 15px;
-  cursor: pointer;
-}
+
 nav .nav-actions .language-toggle {
-  border: none;
-  color: #545454;
-  font-size: 1.8em;
+  color: var(--color5);
+  font-size: 1.7em;
   cursor: pointer;
 }
 nav .nav-actions .btn-tar {
   background-image: linear-gradient(to right bottom, #0097b2, #7ed957);
   padding: 1.4rem 1.6rem;
-  border-radius: 8px;
+  border-radius: 20px;
   text-decoration: none;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
-  font-weight: bold;
-  color: #fff;
+  /* font-weight: bold; */
+  color: var(--color5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
 }
 nav .nav-actions .btn-tar:hover {
   background-image: linear-gradient(to right bottom, #7ed957, #0097b2);
 }
 
-/* Estilos específicos para el botón de cambio de tema */
-#theme-toggle {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.2em;
-  cursor: pointer;
-  position: relative;
-}
 
-/* Mostrar el ícono de sol en el modo claro */
-#theme-toggle .sunny-outline {
+/* ? --------------------------------------------------------- sun/moon theme */
+
+.moon-theme {
   opacity: 1;
 }
 
-/* Mostrar el ícono de luna en el modo oscuro */
-.dark-mode #theme-toggle .moon-outline {
-  opacity: 1;
-}
-
-/* Ocultar el ícono de sol en el modo oscuro */
-.dark-mode #theme-toggle .moon-outline {
+.sun-theme {
   opacity: 0;
-}
-
-/* Ocultar el ícono de luna en el modo claro */
-#theme-toggle .moon-outline {
-  opacity: 0;
-}
-
-/* Ocultar íconos según el tema */
-.hidden {
   display: none;
 }
 
+/* ?------------------------------------------------------------- Whatsapp */
+
+.wsp-flotante {
+  display: block;
+  position: fixed;
+  top: 62em;
+  right: 7em;
+  opacity: .8;
+  top: 1;
+  z-index: 90;
+}
+
+.wsp-flotante img {
+  height: 6em;
+  cursor: pointer; 
+}
+
+
+/* ------------------------------------------------------------------ Footer */
 footer {
   width: 100%;
   bottom: 0;
@@ -354,4 +487,3 @@ footer .content .derecha .media-icon a:hover {
 }
 
 /*# sourceMappingURL=general.css.map */
-

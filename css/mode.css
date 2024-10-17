@@ -1,0 +1,61 @@
+body.dark {
+    background-color: var(--color7);
+}
+
+body.dark .moon-theme {
+    opacity: 0;
+    display: none;
+}
+
+body.dark .sun-theme {
+    opacity: 1;
+    display: block;
+}
+
+/* -------------------------------------------------- format top-bar  */
+
+body.dark .top-bar {
+    background-color: var(--color7);
+}
+
+body.dark .top-bar .top-bar-cont .contact-mail a,
+body.dark .top-bar .top-bar-cont .contact-call a,
+body.dark .login-home a {
+    color: var(--color4);
+}
+
+body.dark .login-home a:hover {
+    color: #a7e036;
+  }
+
+
+/* ------------------------------------------------------ format navbar */
+
+body.dark #navbar {
+    background-color: #82a192;
+}
+
+body.dark .nav-links .home,
+body.dark .barra-nav .home a:hover {
+    background-color: #5d8f75;
+}
+  
+/* ----------------------------------------------------------- */
+
+body.dark .text-section {
+    color: var(--color5);
+}
+
+body.dark .quienes-somos .text-section p {
+    color: var(--color2);
+}
+
+body.dark .cont-quienes-somos {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+}
+
+body.dark .cont-quienes-somos .cont-text .parrafo-historia {
+    color: var(--color2);
+}
+
