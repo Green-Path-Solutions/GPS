@@ -216,11 +216,11 @@
 } */
 
 
-
+/* * --------------------------------------------------  */
 
 .quienes-somos {
   padding: 9.6rem 20rem;
-  /* margin-top: -10px; */
+  margin-top: -10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -229,30 +229,46 @@
   justify-content: center;
   align-items: center;
 }
+
 .quienes-somos .text-section {
   grid-column: span 2;
 }
+
 .quienes-somos .text-section h1 {
+  letter-spacing: 3px;
   margin-bottom: 2rem;
-  font-size: 4rem;
-  color: #97b3a5;
+  font-size: 4.5em;
+  color: var(--color1);
   text-transform: uppercase;
 }
-/* .quienes-somos .text-section h1 span {
-  color: #97b3a5;
-} */
-.quienes-somos .text-section p {
-  font-size: 1.8rem;
-  color: #555;
+
+.quienes-somos .text-section h1 span {
+  color: var(--color4);
 }
+
+.little-box-home {
+  width: 6rem;
+  height: 1.4rem;
+  background-color: var(--color1);
+  margin: 0rem 0 4rem 0;
+}
+
+.quienes-somos .text-section p {
+  font-size: 1.9rem;
+  color: var(--color3);
+  letter-spacing: 1px;
+}
+
 .quienes-somos .img-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .quienes-somos img {
-  width: 95%;
+  width: 100%;
 }
+
 .quienes-somos .barra-img {
   grid-column: span 3;
   display: flex;
@@ -260,10 +276,13 @@
   align-items: center;
   overflow: hidden;
 }
+
 .quienes-somos .barra-img img {
+  margin: 8rem 0 15px 0;
   width: 100%;
   transition: all 0.4s;
 }
+
 .quienes-somos .barra-img img:hover {
   transform: scale(1.1);
 }
@@ -276,13 +295,14 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.09);
-
+  margin-top: 5rem;
   gap: 10px;
   transition: all 0.4s;
   width: 100%;
-  height: 100%;
+  height: 94%;
   box-sizing: border-box;
 }
+
 .cont-quienes-somos img {
   width: 40rem;
   height: 25rem;
@@ -290,37 +310,50 @@
   display: block;
   margin-bottom: 2rem;
 }
+
 .cont-quienes-somos .cont-text {
   padding: 0 2rem 2rem;
 }
+
 .cont-quienes-somos .cont-text .titulo-historia {
-  color:  #93bb41;
-  font-size: 2.1rem;
+  color: var(--color1);
+  font-size: 2.6rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin: .8rem 0rem 2rem .5rem;
 }
-/* .cont-quienes-somos .cont-text .titulo-historia span {
-  color: #93bb41;
-} */
+
+.little-box-cont {
+  width: 3.2rem;
+  height: .6rem;
+  background-color: var(--color1);
+  margin: -.8rem 0 3rem .5rem;
+}
+
 .cont-quienes-somos .cont-text .parrafo-historia {
-  font-size: 1.2rem;
-  margin-bottom: 4rem;
-  color: #333;
+  font-size: 1.5rem;
+  margin: 0 .5rem 2rem .5rem;
+  color: var(--color3);
+  letter-spacing: .5px;
+
 }
+
 .cont-quienes-somos .cont-text a {
-  text-decoration: none;
-  color: #93bb41;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  color: var(--color1);
+  font-size: 3rem;
+  display: flex;
+  justify-content: end;
 }
+
 .cont-quienes-somos .cont-text a:hover {
-  color: #698a27;
+  color: var(--color9);
 }
+
 .cont-quienes-somos:hover {
   transform: translateY(-1.2rem);
 }
 
-/* Botones de navegación del carrusel */
+
+/*-------------------------------- Botones de navegación del carrusel */
 .container-ser {
   position: relative;
   background: #000;
@@ -470,19 +503,21 @@
   display: block;
   font-size: 7.4rem;
   font-weight: 500;
-  color: #93bb41;
+  color: var(--color1);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  margin-top: 7%;
 }
+
 .subtitulo span {
-  color: #97b3a5;
+  color: var(--color4);
 }
 
 .little-box {
   width: 6rem;
   height: 1.6rem;
-  background-color: #93bb41;
+  background-color: var(--color1);
   margin-bottom: 8rem;
 }
 

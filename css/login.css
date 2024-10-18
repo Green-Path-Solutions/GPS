@@ -13,9 +13,9 @@
     align-items: center;
     min-height: 100vh;
     background-color: var(--color5);
-    /* background: url(/src/img/fondo-natural.png) no-repeat;
+    background: url(/src/img/fondo-natural.png) no-repeat;
     background-size:cover;
-    background-position: center;*/
+    background-position: center;
 } 
 
 /* --------------------------------------------------------------- Formato box */
