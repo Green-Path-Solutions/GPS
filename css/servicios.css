@@ -1,0 +1,101 @@
+  .main-servicios {
+    margin-top: 50px;
+  }
+
+  .subtitulo {
+    display: block;
+    font-size: 5.5rem;
+    font-weight: 500;
+    color: var(--color1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 6rem;
+  }
+  
+  .subtitulo span {
+    color: var(--color4);
+  }
+
+  .little-box-servicios {
+    width: 5rem;
+    height: 1.2rem;
+    background-color: var(--color1);
+    margin: 1rem 0 4rem 0;
+  }
+  
+  .grid {
+    display: grid;
+    column-gap: 4.8rem;
+    row-gap: 9.6rem;
+  }
+  
+  .grid--center-v {
+    align-items: center;
+  }
+
+  /* --------------------------------------------- fondo circular de las imgs*/
+
+  .step-img-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .step-img-box::before, .step-img-box::after {
+    content: "";
+    display: block;
+    /* height: 60%; */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .step-img-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: var(--color4);
+    z-index: -2;
+  }
+
+  .step-img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #d7e6d3;
+    z-index: -1;
+  }
+  .step-img-box .step-img {
+    max-width: 38%;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+  }
+  .step-img-box .step-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ---------------------------------------- numeritos */
+  .step-text-box .service-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: var(--color1);
+    margin-bottom: 1.2rem;
+  }
+
+  .step-text-box .sub-service-ti {
+    color: var(--color1);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .step-text-box .step-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: var(--color7);
+  }
+  
+  .space-end-service {
+    margin: 10rem 0;
+  }
+  

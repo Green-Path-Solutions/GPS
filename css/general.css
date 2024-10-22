@@ -243,7 +243,7 @@ nav .nav-actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin-left: 10rem;
 }
 
@@ -251,7 +251,7 @@ nav .nav-actions button {
   background: none;
   color: var(--color5);
   font-size: 2.2rem;
-  margin-left: 15px;
+  margin-left: 5rem;
   cursor: pointer;
 }
 
@@ -267,6 +267,7 @@ nav .nav-actions .language-toggle {
   cursor: pointer;
 }
 nav .nav-actions .btn-tar {
+  margin-left: 5rem;
   background-image: linear-gradient(to right bottom, #0097b2, #7ed957);
   padding: 1.4rem 1.6rem;
   border-radius: 20px;
@@ -391,7 +392,6 @@ nav .nav-actions .btn-tar:hover {
 /* ? ----------------------------------------------------------- clientes/no clientes */
 
 .cont-clientes {
-  margin-top: 10rem;
   display: flex;
   text-align: center;
   flex-wrap: wrap;

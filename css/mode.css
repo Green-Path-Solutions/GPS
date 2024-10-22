@@ -65,3 +65,9 @@ body.dark .home-quienes-somos .text-section p {
 body.dark .cont-nos .cont-text-nos p {
     color: var(--color6);
 }
+
+/* *------------------------------------------------ servicios */
+body.dark 
+.step-text-box .step-description {
+    color: var(--color6);
+}

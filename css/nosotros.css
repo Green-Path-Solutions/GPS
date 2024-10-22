@@ -1,3 +1,7 @@
+.main-nosotros {
+    margin-top: 40px;
+}
+
 .cont-nos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -17,7 +21,8 @@
 .cont-nos .cont-text-nos .secondary-title {
     color: var(--color1);
     letter-spacing: 3px;
-    font-size: 4.5em;
+    font-size: 5em;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -35,12 +40,14 @@
 .cont-nos .cont-text-nos p {
     margin-top: 3rem;
     font-size: 1.9rem;
+    letter-spacing: 1px;
     color: var(--color7);
 }
 
 .cont-nos .cont-img-nos img {
-    max-width: 40rem;
-    height: 40rem;
+    width: 80%;
+    /* height: 40rem; */
+    margin: 0 5rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -97,7 +104,7 @@
 @media (max-width: 1000px) {
     .cont-nos  {
       display: block;
-      padding: 5rem 3rem;
+      padding: 7rem 4rem;
     }
 
     .cont-nos .cont-text-nos {
@@ -115,6 +122,11 @@
     .cont-why .cont-box {
         margin-bottom: 1rem;
     }
+
+    .cont-why .cont-box a {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* ?---------------------------------------- cartas info section */
@@ -122,12 +134,14 @@
 .nosotros-info-section {
     display: block;
     background: var(--color4) ;
+    margin-top: 6rem;
 }
 
 .nosotros-info-section h2 {
     color: var(--color6);
-    padding-top: 3rem;
+    padding-top: 6rem;
     font-size: 4rem;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
 }
@@ -228,4 +242,6 @@
         padding: auto;
         margin: 6rem auto;
     }
+
+    
 }
