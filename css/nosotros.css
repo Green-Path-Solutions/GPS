@@ -1,0 +1,231 @@
+.cont-nos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 9.6rem;
+    margin: 0 auto;
+    max-width: 150rem;
+}
+
+.cont-nos .cont-text-nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0 2rem;
+}
+
+.cont-nos .cont-text-nos .secondary-title {
+    color: var(--color1);
+    letter-spacing: 3px;
+    font-size: 4.5em;
+    text-transform: uppercase;
+}
+
+.cont-nos .cont-text-nos .secondary-title span {
+    color: var(--color4);
+}
+
+.little-box-nosotros {
+    width: 5rem;
+    height: 1.2rem;
+    background-color: var(--color1);
+    margin: 1rem 0;
+}
+
+.cont-nos .cont-text-nos p {
+    margin-top: 3rem;
+    font-size: 1.9rem;
+    color: var(--color7);
+}
+
+.cont-nos .cont-img-nos img {
+    max-width: 40rem;
+    height: 40rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cont-nos .cont-img-nos {
+    margin: 0 auto;
+}
+
+.nosotros-title-section {
+    display: block;
+}
+
+/* ---------------------------------------------------- insignias */
+
+.cont-why {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem 10rem;
+    width: 80%;
+    max-width: 150rem;
+}
+
+.cont-why .cont-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.cont-why .cont-box ion-icon {
+    font-size: 4rem;
+    color: var(--color5);
+    background-color: var(--color1);
+    padding: 2rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    transition: all 1s;
+}
+
+.cont-why .cont-box a {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color1);
+}
+
+.icon-inner, .ionicon, svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* *------------------------------------------------ nosotros tittle section responsive */
+@media (max-width: 1000px) {
+    .cont-nos  {
+      display: block;
+      padding: 5rem 3rem;
+    }
+
+    .cont-nos .cont-text-nos {
+        padding: 0;
+    }
+
+    .cont-nos .cont-text-nos p {
+        margin-bottom: 5rem;
+    }
+
+    .cont-why {
+        margin: 2rem auto;
+    }
+
+    .cont-why .cont-box {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ?---------------------------------------- cartas info section */
+
+.nosotros-info-section {
+    display: block;
+    background: var(--color4) ;
+}
+
+.nosotros-info-section h2 {
+    color: var(--color6);
+    padding-top: 3rem;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cartas-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    max-width: 150rem;
+    padding: 9.6rem;
+}
+
+.carta {
+    justify-self: center;
+    position: relative;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 1rem;
+    transform-style: preserve-3d;
+    transform: perspective(600px);
+    transition: transform 2s;
+}
+
+.carta .frente {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carta .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.carta .frente img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta .frente h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    color: var(--color5);
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.carta .atras {
+ transform: perspective(600px) rotateY(180deg);
+    background-color: var(--color1);
+    padding: 1.5rem;
+    color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carta .atras h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.carta .atras p {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.carta:hover {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+/* *------------------------------------------ cartas responsive */
+@media (max-width: 1000px) {
+    .nosotros-info-section h2 {
+        font-size: 3rem;
+    }
+
+    .cartas-grid {
+        display: block;
+        padding: 0;
+    }
+    
+    .carta {
+        padding: auto;
+        margin: 6rem auto;
+    }
+}

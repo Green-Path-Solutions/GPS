@@ -45,12 +45,9 @@
 /* --------------------------------------------------------------- Carrousel */
 .container-carousel {
   background-color: var(--color9);
-  /* margin-top: 7%; */
   height: calc(100vh - 13rem);
 }
-main {
-  padding-top: 70px; 
-}
+
 .container-carousel .container-bg {
   display: flex;
   justify-content: start;
@@ -397,7 +394,7 @@ main {
   }
 }
 
-/* ?--------------------------------------------- Sección nuestros servicios */
+/* ?--------------------------------------------- Sección nuestros servicios (home) */
 .container-ser {
   position: relative;
   background: #000;
@@ -488,53 +485,8 @@ main {
   background-image: linear-gradient(to right bottom, #7ed957, #0097b2);
 }
 
-/* *----------------------------------------------- seccion nuestros servicios responsiva */
-@media (max-width: 1000px) {
-  .service {
-    display: block;
-    padding: 4rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  
-  .service h2 {
-    font-size: 4rem;
-    margin-top: 3rem;
-    text-align: center;
-  }
-  
-  .service .service-p {
-    font-size: 2rem;
-    margin: 2.5rem 0 4rem 0;
-    text-align: center;
-  }
-  
-  .service .small-image-item {
-    align-self: stretch;
-    max-width: 100%;
-    height: auto;
-    margin: 2rem 0;
-  }
 
-  .service .small-image-item h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-
-  .service .small-image-item p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-  }
-
-  .service .small-image-item a {
-    font-size: 1.2rem;
-    padding: 0.8rem 1rem;
-    width: 40%;
-  }
-}
-
-
-/* ? --------------------------------Estilos para la sección de información */
+/* ? -------------------------------- Clientes y alianzas (home) */
 .clientes-section {
   display: flex;
   flex-direction: column;
@@ -545,7 +497,7 @@ main {
 .clientes-section h2 {
   font-size: 3.6rem;
   text-transform: uppercase;
-  color: #97b3a5;
+  color: var(--color4);
   margin-bottom: 2.5rem
 }
 .clientes-section .container-logos {
@@ -592,6 +544,57 @@ main {
   height: 3rem;
 }
 
+
+/* *----------------------------------------------- seccion nuestros servicios responsive (home) */
+@media (max-width: 1000px) {
+  .service {
+    display: block;
+    padding: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .service h2 {
+    font-size: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .service .service-p {
+    font-size: 2rem;
+    margin: 2.5rem 0 4rem 0;
+    text-align: center;
+  }
+  
+  .service .small-image-item {
+    align-self: stretch;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .service .small-image-item h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .service .small-image-item p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .service .small-image-item a {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    width: 40%;
+  }
+
+  .clientes-section h2 {
+    font-size: 2.6rem;
+  }
+}
+
+/* !----------------------------------------------- ??? */
 .grid {
   display: grid;
   column-gap: 4.8rem;

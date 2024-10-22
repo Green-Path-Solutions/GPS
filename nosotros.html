@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/mode.css">
+    <link rel="stylesheet" href="/css/nosotros.css">
     <link rel="icon" href="/src/img/logo-sinTitulo.png " >
   </head>
 
@@ -32,10 +33,13 @@
         </div>
       </div>
       
-    
-      <!-- * -------------------------------------------------------------- Nav -->
+      <!--*---------------------------------------------------------------- Nav -->
       <nav id="navbar"   class="barra-nav">
-
+        <div class="logo">
+          <a href="index.html" class="logo-link-home">
+            <img src="/img/logo.png" alt="Logo de la compañia" />
+          </a>
+          </div>
         <ul class="nav-links">
           <li class="nav-li home"><a href="index.html">Inicio</a></li>
           <div class="nav-options">
@@ -44,16 +48,11 @@
           <li class="nav-li"><a href="ecommerce.html">Tienda</a></li>
           <li class="nav-li"><a href="contacto.html">Contacto</a></li>
         </ul>
-      </div>
-
-      <div class="logo">
-        <img src="/img/logo.png" alt="Logo de la compañia" />
-        </div>
-      </div>
+     
        
 
-        <!-- *---------------------------------------------------------  Actions -->
-        <div class="nav-actions"> 
+        <!--*--------------------------------------------------------- btn i nav Actions -->
+        <div id="nav-actions"  class="nav-actions"> 
           <!-- <button id="search"><ion-icon name="search-outline"></ion-icon></button> -->
           <button id="bag-handle"><ion-icon name="bag-handle-outline"></ion-icon></button>
           
@@ -71,46 +70,50 @@
     </section>
     </header>
 
-<!-- ! Titulo, texto e imagen -->
-
+<!-- ! ------------------------------------------------------------ Titulo, texto e imagen -->
+<main class="main-nosotros">
     <section class="nosotros-title-section">
         <div class="cont-nos">
             <div class="cont-text-nos">
                 <h2 class="secondary-title">
-                    <span>Sobre</span> Green PAth solutions
+                    <span>Sobre</span> Green Path solutions
                 </h2>
+                <div class="little-box-nosotros"></div>
+
                 <div class="box-li"></div>
-                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras y sostenibles en el reciclaje de residuos electrónicos. Con un equipo comprometido y una sólida experiencia en el sector, trabajamos junto a empresas de todos los tamaños para reducir su impacto ambiental y fomentar una economía circular. Nuestro enfoque se basa en la excelencia operativa, la responsabilidad ecológica y el servicio personalizado, brindando a nuestros clientes la confianza de estar colaborando con un líder en sostenibilidad. Nos apasiona transformar residuos en recursos y construir un futuro más limpio y verde para todos.</p>
+                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras y sostenibles en el reciclaje de residuos electrónicos. 
+                  Con un equipo comprometido y una sólida experiencia en el sector, trabajamos junto a empresas de todos 
+                  los tamaños para reducir su impacto ambiental y fomentar una economía circular. 
+                  Nuestro enfoque se basa en la excelencia operativa, la responsabilidad ecológica y el servicio personalizado, 
+                  brindando a nuestros clientes la confianza de estar colaborando con un líder en sostenibilidad. 
+                  Nos apasiona transformar residuos en recursos y construir un futuro más limpio y verde para todos.</p>
             </div>
             <div class="cont-img-nos">
             <img src="/img/nosotros.jpg" alt="Imagen de  nuestra empresa">
             </div>
         </div>
 
-<!-- ! Por que elegirnos -->
+<!-- !---------------------------------------------------------------- Por que elegirnos -->
 
         <div class="beneficios">
             <div class="cont-why">
                 <div class="cont-box">
                     <ion-icon name="star-half-outline"></ion-icon>
-                    <a>LÍDERES EN RECICLAJE <br>E-WASTE</a>
+                    <a>Líderes en reciclaje <br>E-Waste</a>
                 </div>
                 <div class="cont-box">
                     <ion-icon name="checkbox-outline"></ion-icon>
-                    <a>COMPLETA OFERTA <br> DE SERVICIOS</a>
+                    <a>Oferta completa <br> de servicios</a>
                 </div>
                 <div class="cont-box">
                     <ion-icon name="people-outline"></ion-icon>
-                    <a>ATENCIÓN Al cliente <br>
-                        PERSONALIZADA</a>
+                    <a>Atención al cliente <br>
+                        personalizada</a>
              </div>
         </div>
     </section>
 
-
-       
-
-    
+    <!-- ?---------------------------------------- nosotros info section -->
     <section class="nosotros-info-section"> 
         <h2>NUESTROS PRINCIPIOS</h2>
         <div class="cartas-grid">
@@ -132,7 +135,10 @@
                     </div>
                     <div class="cara atras">
                         <h3>visión</h3>
-                        <p>Queremos ser líderes en reciclaje electrónico regional, destacando por nuestra innovación y compromiso con la sostenibilidad. Buscamos ser el socio preferido para empresas que desean un futuro más verde y un reciclaje responsable.</p>
+                        <p>Creemos que la colaboración es clave para un futuro sostenible. Al trabajar 
+                          juntos, podemos multiplicar nuestros esfuerzos y hacer que las prácticas sostenibles 
+                          sean más accesibles y efectivas.
+                          Buscamos crear un cambio positivo y duradero en la comunidad y el planeta.</p>
                     </div>
                 </div>
                 <div class="carta">
@@ -147,10 +153,11 @@
                 </div>
             </div>
         </section>
+      </main> 
         
-        
-        
-        
+        <!-- *----------------------------------------------------- Wsp flotante -->
+        <div id="wsp-flotante" class="wsp-flotante"><img src="./src/img/whatsapp_icon.png" alt="WhatsApp GPS"></div>
+
         
     <!-- !---------------------------------------- Aquí va el pie de página -->
    
@@ -161,6 +168,8 @@
           <div class="arriba">
             <img src="img/logo.png" />
              </div>
+   
+   
           <div class="abajo">
             <div class="topico">Herramientas</div>
             <div class="cont-lenguaje">
@@ -172,6 +181,8 @@
               <ion-icon name="logo-javascript"></ion-icon>
             </div>
           </div>
+   
+   
         </div>
    
         <div class="medio">
@@ -190,9 +201,9 @@
             <div class="media-icon">
               <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
               <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-              <a href="https://www.tiktok.com/" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a>
-              <a href="https://www.x.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-              <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a href="https://www.tiktok.com/" target="_blank" ><ion-icon name="logo-tiktok"></ion-icon></a>
+              <a href="https://www.x.com/" target="_blank" ><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="https://www.youtube.com/" target="_blank" ><ion-icon name="logo-youtube"></ion-icon></a>
               <a href="https://www.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
            </form>
@@ -201,8 +212,7 @@
        </div>
      
     </footer>
-
-
+   
 
       <script type="module" src="/script.js"></script>
       <script type="module" src="/main.js"></script>

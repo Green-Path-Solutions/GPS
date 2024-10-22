@@ -31,15 +31,6 @@ body.dark .login-home a:hover {
 
 /* *------------------------------------------------------ format navbar */
 
-body.dark #navbar {
-    background-color: #82a192;
-}
-
-body.dark .nav-links .home,
-body.dark .barra-nav .home a:hover {
-    background-color: #5d8f75;
-}
-  
 /* ----------------------------------------------------------- */
 
 body.dark .text-section {
@@ -69,3 +60,8 @@ body.dark .home-quienes-somos .text-section p {
     color: var(--color6);
 }
 
+/* *------------------------------------------------ nosotros */
+
+body.dark .cont-nos .cont-text-nos p {
+    color: var(--color6);
+}

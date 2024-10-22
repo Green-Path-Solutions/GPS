@@ -39,6 +39,10 @@ body {
   top: -.2vh;
 }
 
+main {
+  padding-top: 70px; 
+}
+
 /* -------------------------------------------------- Estilos para la top-bar */
 .top-bar {
   background-color: var(--color6);
@@ -143,7 +147,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   position: relative;
-  background-color: #82a192;
+  background-color: var(--color8);
   color: var(--color5);
 
 }
@@ -178,15 +182,14 @@ nav .nav-links li {
   display: inline-block;
 }
 
-.nav-links .home,
+/* .nav-links .home,
 .barra-nav .home a:hover {
-  background-color: #5d8f75;
+  background-color: var(--color1);
   border-radius: 20px;
-}
-
+} */
 
 .barra-nav a:hover {
-  background:  #a5c4b4;
+  background:  var(--color1);
   border-radius: 20px;
 }
 
@@ -226,6 +229,14 @@ nav .logo .logo-cont {
 nav .logo img {
   height: 7rem;
 }
+
+nav .logo .logo-link-home {
+  padding: 0;
+}
+
+nav .logo a:hover {
+  background: none;
+} 
 
 /* ------------------------------------------------------------------------ Nav actions*/
 nav .nav-actions {
@@ -548,6 +559,8 @@ footer .content .derecha .media-icon a {
   margin: 27px 7px 0 0;
   transition: all 0.3s ease;
 }
+
+
 footer .content .derecha .media-icon a:hover {
   border-color: var(--color9);
   color: var(--color9);
@@ -615,7 +628,7 @@ footer .content .derecha .media-icon a:hover {
   }
 
   footer .content .derecha .media-icon a {
-    margin: 15px 10px 0 10px;
+    margin: 20px 5px 2px 5px;
   }
 }
 
