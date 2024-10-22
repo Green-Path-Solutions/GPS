@@ -118,3 +118,13 @@ function login() {
   // This is where you'd normally handle authentication
   alert("Iniciando sesión para " + username);
 }
+
+// *-------------------------------------------- de Prueba
+
+document.getElementById('solicitar-reco').addEventListener('click', function() {
+  window.location.href = '#';
+});
+
+document.getElementById('solicitar-info').addEventListener('click', function() {
+  window.location.href = '#';
+});

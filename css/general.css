@@ -34,6 +34,7 @@ body {
 /* ----------------------------------------------------- Section header all-cont*/
 .all-cont {
   position: fixed;
+  width: 100%;
   z-index: 99;
   top: -.2vh;
 }
@@ -46,6 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .contact-call {
@@ -117,6 +119,23 @@ body {
   text-decoration: none;
 }
 
+/* *-------------------------------------------- toogle responsive */
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 1rem 2rem; 
+    flex-direction: column; 
+  }
+  
+  .login-home {
+    width: 100%;
+    justify-content: flex-end; 
+  }
+  .top-bar .top-bar-cont .contact-mail,
+  .top-bar .top-bar-cont .contact-call {
+    display: none;
+  }
+}
 /* ------------------------------------------------------------------------------------- Nav */
 .barra-nav {
   padding: 0 3em;
@@ -124,7 +143,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   position: relative;
-  background-color: var(--color4);
+  background-color: #82a192;
   color: var(--color5);
 
 }
@@ -137,7 +156,6 @@ nav .nav-links {
 
 nav .nav-links li {
   padding: 0 1.3rem;
-  /* font-weight: 600; */
 }
 
 
@@ -162,7 +180,7 @@ nav .nav-links li {
 
 .nav-links .home,
 .barra-nav .home a:hover {
-  background-color: #84a092;
+  background-color: #5d8f75;
   border-radius: 20px;
 }
 
@@ -173,6 +191,7 @@ nav .nav-links li {
 }
 
 /* ?--------------------------------------------------------------------Nav hamburguer */
+
 .barra-nav .hamburger {
   position: absolute;
   top: 0;
@@ -189,101 +208,6 @@ nav .nav-links li {
   padding: 0.5rem;
 }
 
-/* !------------------------------------------------------------------- Header Responsive */
-/* ?---------------------------------------------------------------- Nav responsive */
-@media screen and (max-width: 768px) {
-
-  .barra-nav .hamburger {
-    display: block;
-    padding-top: 1%;
-  }
-
-  .barra-nav {
-    display: block;
-    padding: 0px ;
-   
-  }
-
-  .barra-nav.open ul {
-    display: block;
-  }
-
-  nav .nav-links li {
-    padding: 0rem;
-  }
-
-  .nav-links .home,
-.barra-nav .home a:hover {
-  border-radius: 0px;
-}
-
-
-.barra-nav a:hover {
-  border-radius: 0px;
-}
-  
-  .barra-nav.open .nav-options {
-    display: block;
-  }
-
-  .barra-nav.open a {
-    display: block;
-  }
-
-  .barra-nav .nav-options {
-    display: none;
-  }
-  
-  .logo img {
-   position: absolute;
-   top: -8em;
-  }
- 
-  nav .nav-actions {
-    display: none;
-  }
-
-  nav .nav-actions .btn-tar,
-  nav .nav-actions button {
-    display: none;
-  }
-
-  .top-bar {
-    padding-left: 2em; 
-    height: 10em;
-    width: 50vh;
-    display: flex;
-    /* background-color: transparent; */
-    /* flex-direction: row;  */
-    /* flex-direction: column; */
-    /* align-items: flex-end; */
-    /* position: absolute; */
-    /* top: 60px; */
-    /* right: 0; */
-    /* z-index: 10; */
-    /* padding: 10px 20px; */
-    /* opacity: 0; */
-  } 
-
-  .top-bar .top-bar-cont .contact-mail ion-icon,
-.top-bar .top-bar-cont .contact-call ion-icon {
-  display: none;
-}
-
-  .top-bar p,
-  .login-home p {
-    display: none;
-  }
- 
- /* .contact-call {
-     padding-left: 1em; 
-  }*/
-
-  .login-home ion-icon{
-     /* padding-left: 1.2em;  */
-     display: none;
-   }
-}
 /* ---------------------------------------------------------------------- Nav logo */
 
 nav .logo {
@@ -306,7 +230,6 @@ nav .logo img {
 /* ------------------------------------------------------------------------ Nav actions*/
 nav .nav-actions {
   display: flex;
-  /* gap: 1rem; */
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -314,7 +237,6 @@ nav .nav-actions {
 }
 
 nav .nav-actions button {
-  /* padding-left: 1rem; */
   background: none;
   color: var(--color5);
   font-size: 2.2rem;
@@ -341,7 +263,6 @@ nav .nav-actions .btn-tar {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
-  /* font-weight: bold; */
   color: var(--color5);
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 
@@ -351,7 +272,7 @@ nav .nav-actions .btn-tar:hover {
 }
 
 
-/* ? --------------------------------------------------------- sun/moon theme */
+/* ! --------------------------------------------------------- sun/moon theme */
 
 .moon-theme {
   opacity: 1;
@@ -362,14 +283,84 @@ nav .nav-actions .btn-tar:hover {
   display: none;
 }
 
+
+/* *------------------------------------------------------ nav responsive */
+
+
+@media screen and (max-width: 1500px) {
+  nav .logo{
+   align-items: flex-start;
+   justify-self: start;
+   flex-direction: column;
+ } 
+
+ .barra-nav .hamburger {
+   display: block;
+   padding: 1.5%;
+ }
+
+ .barra-nav {
+   display: block;
+   padding: 0px ;
+  
+ }
+
+.barra-nav.open ul {
+    display: block;
+    transition: all .5s;
+   } 
+   
+   
+   nav .nav-links li {
+     padding: 0rem;
+   }
+   
+   .nav-links .home,
+   .barra-nav .home a:hover {
+     border-radius: 0px;
+     display: none;
+     
+   }
+   
+   .barra-nav a:hover {
+     border-radius: 0px;
+   }
+   
+   .barra-nav.open .nav-options {
+     display: block;
+ }
+
+ .barra-nav.open a {
+   display: block;
+ }
+
+ .barra-nav .nav-options {
+   display: none;
+ }
+  
+ nav #nav-actions {
+   display: none;
+
+ }
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .barra-nav .hamburger {
+    padding: 2.5%;
+  }
+
+}
+
 /* ?------------------------------------------------------------- Whatsapp */
 
 .wsp-flotante {
   display: block;
   position: fixed;
-  top: 62em;
-  right: 7em;
-  opacity: .8;
+  top: auto;
+  right: 6em;
+  bottom: 6em; 
+  opacity: .9;
   top: 1;
   z-index: 90;
 }
@@ -379,14 +370,75 @@ nav .nav-actions .btn-tar:hover {
   cursor: pointer; 
 }
 
+/* *------------------------------------------------- wsp responsivo */
 
-/* ------------------------------------------------------------------ Footer */
+@media (max-width: 900px) {
+  .wsp-flotante {
+    right: 2.5em;  
+  }
+}
+/* ? ----------------------------------------------------------- clientes/no clientes */
+
+.cont-clientes {
+  margin-top: 10rem;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-cliente {
+  flex: 1;
+  padding: 20px;
+}
+
+.section-cliente h3 {
+  font-size: 4rem;
+}
+
+.section-cliente p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--color9)
+}
+
+.section1 {
+  background-color: var(--color8);
+  color: var(--color5);
+}
+
+.section2 {
+  background-color: var(--color1);
+  color: var(--color5);
+}
+
+.btn-cliente {
+  margin: 4rem 0 2rem 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: var(--color9);
+  color: inherit;
+}
+
+.btn-cliente:hover {
+  background-color: transparent;
+  border: 2px solid var(--color9);
+  color: var(--color9);
+  transition: all 0.5s ease-in-out;
+} 
+
+/* ? --------------------------------------------------------------- Footer */
 footer {
   width: 100%;
   bottom: 0;
   left: 0;
   background: #111;
 }
+
 footer .content {
   max-width: 1350px;
   margin: auto;
@@ -399,8 +451,9 @@ footer .content {
 
 footer .content .izquierda .arriba img {
   width:32rem;
-  padding-bottom: 4%;
+  
 }
+
 
 footer .content .izquierda .abajo {
   display: flex;
@@ -419,10 +472,6 @@ footer .content .izquierda .abajo .cont-lenguaje {
   font-size: 2.2rem;
   color: var(--color0);
 }
-
-/* footer .content .medio {
-  margin-bottom: 2.4rem;
-} */
 
 footer .content .medio h3 {
   color: var(--color1);
@@ -463,6 +512,7 @@ footer .content .derecha .ingresa-t {
   font-size: 17px;
   border: 2px solid var(--color0);
 }
+
 footer .content .derecha .enviar-t {
   height: 42px;
   width: 100%;
@@ -529,6 +579,44 @@ footer .content .derecha .media-icon a:hover {
 
 .copyright {
   margin-top: 1.6rem;
+}
+
+/* * --------------------------------------------- footer responsivo */
+
+@media (max-width: 800px) {
+  footer .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .content .izquierda .abajo {
+    display: none;
+  }
+
+  footer .content .medio {
+    margin-top: 5rem;
+  }
+
+
+  footer .content .derecha {
+    margin-top: 5rem;
+  }
+
+  footer .content .derecha form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .content .derecha .media-icon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  footer .content .derecha .media-icon a {
+    margin: 15px 10px 0 10px;
+  }
 }
 
 /*# sourceMappingURL=general.css.map */
