@@ -127,7 +127,7 @@ main {
 
 @media (max-width: 768px) {
   .top-bar {
-    padding: 1rem 2rem; 
+    padding: .7rem 2rem; 
     flex-direction: column; 
   }
   

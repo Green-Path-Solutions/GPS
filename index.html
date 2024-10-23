@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/login.css"> 
     <link rel="stylesheet" href="/css/contacto.css"> 
     <link rel="stylesheet" href="/css/mode.css">
+    <link rel="stylesheet" href="/cookies/cookies.css">
     <link rel="icon" href="/src/img/logo-sinTitulo.png " >
   </head>
 
@@ -70,6 +71,25 @@
     </header>
 
     <main>
+
+<!-- * ------------------------------------------------- cookies -->
+ <div class="aviso-cookies" id="aviso-cookies">
+  <ion-icon name="close-outline" class="close-icon" id="close-icon"></ion-icon>
+  <p class="parrafo">Utilizamos cookies para ofrecerte la 
+    mejor experiencia en nuestra web.
+    Para saber más sobre que cookies utilizamos, podes ver nuestra
+    politica de cookies <a class="cookie-link" href="/cookies/avizo-cookies.html" target="_blank">acá.
+    </a>
+  </p>
+
+  <button id="aceptar-cookies" class="btn-cookies">Aceptar</button>
+  <button id="rechazar-cookies" class="btn-cookies">Rechazar</button>
+  <!-- <button id="ajustes-cookies" class="btn-cookies btn-ajustes">Ajustes</button> -->
+
+ </div>
+ <div class="fondo-aviso-cookies" id="fondo-cookies"></div>
+
+
 
       <!--!-------------------------------------------------- Carrusel de imágenes -->
        <section class="container-carousel">
@@ -284,6 +304,7 @@
     <script type="module" src="/main.js"></script>
     <script type="module" src="/app.js"></script>
     <script src="/mode.js"></script>
+    <script src="/cookies/cookies.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

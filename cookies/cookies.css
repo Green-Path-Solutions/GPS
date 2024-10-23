@@ -1,0 +1,70 @@
+.aviso-cookies {
+    display: block;
+    background: var(--color5);
+    padding: 1rem;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    line-height: 150%;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 40px;
+    left: 5%; 
+    z-index: 1000;
+    padding-top: 38px;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 8px 2px 20px 10px rgba(222, 222, 222, .25);
+} 
+
+.aviso-cookies .parrafo {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1px;
+}
+
+.aviso-cookies .parrafo .cookie-link {
+    color: var(--color3);
+} 
+ 
+.btn-cookies {
+    margin: 1rem 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+    
+.btn-cookies:hover {
+    background-color: var(--color0);
+    transition: all 0.5s ease-in-out;
+}
+    
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.fondo-aviso-cookies {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+@media (min-width: 1200px) {
+    .aviso-cookies {
+        max-width: 500px;
+    }
+}
