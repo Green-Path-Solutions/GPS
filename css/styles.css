@@ -99,33 +99,35 @@
   width: 30rem;
 }
 .container-carousel .container-bg .container-text .btn-tarifas {
-  padding: 1.5rem 2rem;
+  padding: 1.1rem 2rem;
   border-radius: 20px;
+  border: 1px solid var(--color9);
   background-color: var(--color9);
   color: var(--color5);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   transition: all 0.35s;
 }
 .container-carousel .container-bg .container-text .btn-tarifas:hover {
-  border: 2px solid var(--color9);
+  border: 1px solid var(--color9);
   background-color: transparent;
   color: var(--color9);
   box-shadow: 0 0 0 0px var(--color9);
 }
 .container-carousel .container-bg .container-text .btn-ver-mas {
   text-decoration: none;
-  padding: 1.5rem 2rem;
+  padding: 1.1rem 2rem;
   margin-left: 1rem;
   border-radius: 20px;
-  color: var(--color4);
-  background-color: var(--color5);
-  font-size: 2rem;
+  border: 1px solid var(--color8);
+  color: var(--color6);
+  background-color: var(--color8);
+  font-size: 1.7rem;
   transition: all 0.35s;
 }
 .container-carousel .container-bg .container-text .btn-ver-mas:hover {
   background-color: transparent;
-  border: 2px solid var(--color5);
+  border: 1px solid var(--color5);
   box-shadow: 0 0 0 0px var(--color5);
   color: var(--color5);
 }
@@ -180,12 +182,13 @@
 
   .container-carousel .container-bg .container-text .btn-ver-mas {
     background-color: var(--color4);
+    border: 1px solid var(--color4);
     color: var(--color5);
   }
 
   .container-carousel .container-bg .container-text .btn-ver-mas:hover {
-    color: var(--color4);
-    border: 2px solid var(--color4);
+    color: var(--color0);
+    border: 1px solid var(--color0);
   }
 
 }
@@ -417,7 +420,7 @@
   max-width: 140rem;
   position: relative;
   z-index: 1;
-  margin-bottom: 8rem;
+  margin-bottom: 7rem;
 }
 
 .service h2 {
@@ -494,8 +497,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 8rem 0;
+  /* padding: 5rem 0; */
 }
+
 .clientes-section h2 {
   font-size: 3.6rem;
   text-transform: uppercase;

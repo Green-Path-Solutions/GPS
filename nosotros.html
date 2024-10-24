@@ -81,7 +81,9 @@
                 <div class="little-box-nosotros"></div>
 
                 <div class="box-li"></div>
-                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras y sostenibles en el reciclaje de residuos electrónicos. 
+                <p>Somos una empresa dedicada a ofrecer alternativas sustentables a 
+                  la gestión de residuos electrónicos mediante la revalorización, recuperación y 
+                  reciclaje o destrucción de desechos no orgánicos.
                   Con un equipo comprometido y una sólida experiencia en el sector, trabajamos junto a empresas de todos 
                   los tamaños para reducir su impacto ambiental y fomentar una economía circular. 
                   Nuestro enfoque se basa en la excelencia operativa, la responsabilidad ecológica y el servicio personalizado, 
@@ -99,7 +101,7 @@
             <div class="cont-why">
                 <div class="cont-box">
                     <ion-icon name="star-half-outline"></ion-icon>
-                    <a>Líderes en reciclaje <br>E-Waste</a>
+                    <a>Líderes en reciclaje <br>RAEE</a>
                 </div>
                 <div class="cont-box">
                     <ion-icon name="checkbox-outline"></ion-icon>
@@ -112,6 +114,23 @@
              </div>
         </div>
     </section>
+
+<!-- ! ---------------------------------------------------- cuadro cifras aumento -->
+
+<section class="section-counter-nosotros">
+  <div class="counter-container-nosotros">
+  
+    <div class="counter-nosotros">
+      <div class="number-nosotros" id="recolectado-nosotros">0</div>
+      <h3><ion-icon name="trash"></ion-icon>material recolectado</h3>
+  </div>
+  <div class="counter-nosotros">
+      <div class="number-nosotros" id="recuperado-nosotros">0</div>
+      <h3><ion-icon name="leaf"></ion-icon>material recuperado</h3>
+  </div>
+
+</div>
+</section>
 
     <!-- ?---------------------------------------- nosotros info section -->
     <section class="nosotros-info-section"> 
@@ -126,7 +145,7 @@
                     <h3>MISIóN</h3>
                     <p>
                       Aportamos valor a tu empresa ayudándote a gestionar y reciclar los residuos electrónicos de 
-                      manera sostenible siguiendo las directrices de la ley 14321 y la ley 11720. 
+                      manera sostenible siguiendo las directrices de la ley 14321. 
                       Contribuyendo directamente a la preservación del medio ambiente apostando por la economía circular.
                     </p>
                     </div>
@@ -164,22 +183,33 @@
                 <!-- *----------------------------------------------------- Wsp flotante -->
                 <div id="wsp-flotante" class="wsp-flotante"><img src="./src/img/whatsapp_icon.png" alt="WhatsApp GPS"></div>
                 
-                <!-- ?---------------------------------------- Clientes/ no clientes -->
-                
-                <div class="cont-clientes">
-                  <div class="section-cliente section1">
-                    <h3>¿Ya sos cliente?</h3>
-                    <p>Podes solicitar la recolección de tus residuos electrónicos directamente online.</p>
-                    <button id="solicitar-reco" class="btn-cliente" >Solicitar recolección</button>
+
+                <!-- ? -------------------------------------------------- en que somos especialistas -->
+           
+                <section class="container-especialistas">
+                <div class="especialistas-box">
+                  <div class="text-content-nosotros">
+                      <h4>| para empresas y particulares</h4>
+                      <h2>¿En qué somos especialistas?</h2>
+                      <p>Nos especializamos en la revalorización de residuos RAEE para empresas y particulares, el reciclaje, reutilización y recuperación de distintos materiales, y la gestión, transporte y destrucción de aquello que ha llegado al fin de su vida útil.</p>
                   </div>
-                  <div class="section-cliente section2">
-                    <h3>¿Aún no sos cliente?</h3>
-                    <p>Valoriza tus residuos electrónicos y súmate a las empresas sostenibles.</p>
-                    <button id="solicitar-info" class="btn-cliente" >Solicitar información</button>
+                  <div class="image-content-nosotros">
+                      <img src="/src/img/esg-environmental-social-governance.jpg" alt="Especialistas en reciclaje">
                   </div>
-                </div>
-                
-              </main> 
+              </div>
+            </section>
+
+<!-- ?--------------------------------------------------------------- preguntas/ respuestas -->
+
+      <section class="section-preguntas-respuestas">
+        <div class="cont-preguntas-respuestas">
+          <h3>¿Tenés preguntas? <span> Tenemos respuestas</span></h3>
+          <p>Envianos tu consulta y un asesor especializado te contactará pronto</p>
+          <button id="solicitar-respuestas" class="btn-contacto-nosotros" >Contactar</button>
+        </div>
+      </section>
+
+  </main> 
 
 
     <!-- !---------------------------------------- Aquí va el pie de página -->
@@ -240,7 +270,7 @@
       <script type="module" src="/script.js"></script>
       <script type="module" src="/main.js"></script>
       <script type="module" src="/app.js"></script>
-      <script src="/mode.js"></script>
+      <script type="module" src="/mode.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

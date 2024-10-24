@@ -64,7 +64,7 @@
 .cont-why {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 1rem 10rem;
+    margin: 1rem 10rem 7rem;
     width: 80%;
     max-width: 150rem;
 }
@@ -116,7 +116,7 @@
     }
 
     .cont-why {
-        margin: 2rem auto;
+        margin: 6rem auto;
     }
 
     .cont-why .cont-box {
@@ -129,11 +129,80 @@
 
 }
 
+/* !-------------------------------------------------------- cuadrito cifras en aumento */
+
+.section-counter-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin: 0;
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, .8),
+    rgba(0, 0, 0, .8)),url(/src/img/naturaleza_Felix-Mittermeier_Pexels.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.counter-container-nosotros {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 800px;
+}
+
+.counter-nosotros {
+    /* border: 1.2px solid var(--color1); */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 3rem;
+}
+
+.counter-nosotros .number-nosotros {
+    font-size: 2.5rem;
+    color: var(--color1);
+    margin-bottom: 2rem;
+}
+
+.counter-nosotros h3 {
+    font-size: 2rem;
+    color: var(--color1);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.counter-nosotros ion-icon {
+    font-size: 1.5rem;
+    margin-right: .4rem;
+}
+
+/* *--------------------------------------------------- cuadrito cifras en aumento responsive */
+@media (max-width: 600px) {
+
+    .section-counter-nosotros {
+        height: 50vh;
+    }
+
+    .counter-container-nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter-nosotros {
+        margin: 10px 0;
+        width: 50%;
+        /* border: none; */
+    }
+}
 /* ?---------------------------------------- cartas info section */
 
 .nosotros-info-section {
     display: block;
-    background: var(--color4) ;
+    background: var(--color8) ;
     margin-top: 6rem;
 }
 
@@ -245,3 +314,84 @@
 
     
 }
+
+/* ?--------------------------------------------------- en que somos especialistas */
+.container-especialistas {
+    margin: 7rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.especialistas-box {
+    display: flex;
+    background-color: var(--color6);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.text-content-nosotros, 
+.image-content-nosotros {
+    margin: 1rem ;
+    padding: 20px;
+}
+
+.text-content-nosotros {
+    flex: 1;
+}
+
+.text-content-nosotros h4 {
+    color: var(--color8);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-content-nosotros h2 {
+    color: #1b5e20 ;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text-content-nosotros p {
+    font-size: 1.5rem;
+    color: var(--color3);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.image-content-nosotros {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content-nosotros img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* *-------------------------------------------- especialistas responsive */
+
+@media (max-width: 768px) {
+    .container-especialistas {
+        margin: 18rem 6rem;
+    }
+
+    .especialistas-box {
+        flex-direction: column;
+    }
+    
+    .image-content-nosotros {
+        order: -1;
+        margin-bottom: -1.5rem;
+    }
+}
+
