@@ -83,19 +83,3 @@ function showNextNews() {
 
 setInterval(showNextNews, 5000); // Cambia cada 5 segundos
 
-// LOGIN
-
-function login() {
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-
-  // Simple validation check
-  if (username === "" || password === "") {
-    alert("Por favor, complete ambos campos.");
-    return;
-  }
-
-  // This is where you'd normally handle authentication
-  alert("Iniciando sesión para " + username);
-}
-
