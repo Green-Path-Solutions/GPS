@@ -39,10 +39,6 @@ body {
   top: -.2vh;
 }
 
-main {
-  padding-top: 70px; 
-}
-
 /* -------------------------------------------------- Estilos para la top-bar */
 .top-bar {
   background-color: var(--color6);
@@ -182,12 +178,6 @@ nav .nav-links li {
   display: inline-block;
 }
 
-/* .nav-links .home,
-.barra-nav .home a:hover {
-  background-color: var(--color1);
-  border-radius: 20px;
-} */
-
 .barra-nav a:hover {
   background:  var(--color1);
   border-radius: 20px;
@@ -238,13 +228,15 @@ nav .logo a:hover {
   background: none;
 } 
 
+
+
 /* ------------------------------------------------------------------------ Nav actions*/
 nav .nav-actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   /* justify-content: space-around; */
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
 }
 
 nav .nav-actions button {
@@ -267,7 +259,7 @@ nav .nav-actions .language-toggle {
   cursor: pointer;
 }
 nav .nav-actions .btn-tar {
-  margin-left: 5rem;
+  margin-left: 4rem;
   background-image: linear-gradient(to right bottom, #0097b2, #7ed957);
   padding: 1.4rem 1.6rem;
   border-radius: 20px;
@@ -299,7 +291,7 @@ nav .nav-actions .btn-tar:hover {
 /* *------------------------------------------------------ nav responsive */
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1250px) {
   nav .logo{
    align-items: flex-start;
    justify-self: start;
@@ -355,7 +347,8 @@ nav .nav-actions .btn-tar:hover {
 
  }
  
-}
+} 
+
 
 @media screen and (max-width: 800px) {
   .barra-nav .hamburger {
@@ -389,58 +382,7 @@ nav .nav-actions .btn-tar:hover {
     right: 2.5em;  
   }
 }
-/* ? ----------------------------------------------------------- clientes/no clientes */
 
-.cont-clientes {
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section-cliente {
-  flex: 1;
-  padding: 20px;
-}
-
-.section-cliente h3 {
-  font-size: 4rem;
-}
-
-.section-cliente p {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  color: var(--color9)
-}
-
-.section1 {
-  background-color: var(--color8);
-  color: var(--color5);
-}
-
-.section2 {
-  background-color: var(--color1);
-  color: var(--color5);
-}
-
-.btn-cliente {
-  margin: 4rem 0 2rem 0;
-  padding: 10px 20px;
-  border: 1px solid var(--color9);
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  background-color: var(--color9);
-  color: inherit;
-}
-
-.btn-cliente:hover {
-  background-color: transparent;
-  border: 1px solid var(--color9);
-  color: var(--color9);
-  transition: all 0.5s ease-in-out;
-} 
 
 /* ? -------------------------------------------------- cuadrito preguntas/respuestas */
 
@@ -504,6 +446,70 @@ nav .nav-actions .btn-tar:hover {
       font-size: 1.5rem;
   }
 }
+
+/* ? ----------------------------------------------------------- servicios empresas/particulares */
+
+.cont-clientes {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 35vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-cliente {
+  flex: 1;
+  padding: 55px;
+
+}
+
+.section-cliente h2 {
+  font-size: 3.7rem;
+  color: var(--color6);
+}
+
+.section-cliente h4 {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  color: var(--color1)
+}
+
+.section1 {
+  background-image: linear-gradient(0deg,
+  rgba(0, 0, 0, .8), rgba(0, 0, 0, .4)),url(/src/img/cerrando-tratos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section2 {
+  background-image: linear-gradient(0deg,
+  rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),url(/src/img/recycl.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-cliente {
+  margin: 4rem 0 2rem 0;
+  padding: 10px 20px;
+  border: 1px solid var(--color9);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: var(--color9);
+  color: inherit;
+}
+
+.btn-cliente:hover {
+  background-color: transparent;
+  border: 1px solid var(--color9);
+  color: var(--color9);
+  transition: all 0.5s ease-in-out;
+} 
+
 
 /* ? --------------------------------------------------------------- Footer */
 footer {

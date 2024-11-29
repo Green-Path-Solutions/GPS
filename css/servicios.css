@@ -1,8 +1,14 @@
   .main-servicios {
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
-  .subtitulo {
+  .container-servicios {
+    max-width: 150rem;
+    padding: 0 9.6rem;
+}
+  
+
+  .subtitulo-servicios {
     display: block;
     font-size: 5.5rem;
     font-weight: 500;
@@ -12,15 +18,16 @@
     margin-top: 6rem;
   }
   
-  .subtitulo span {
+  .subtitulo-servicios span {
     color: var(--color4);
+    
   }
 
   .little-box-servicios {
     width: 5rem;
     height: 1.2rem;
     background-color: var(--color1);
-    margin: 1rem 0 4rem 0;
+    margin: 1rem 0 2rem 0;
   }
   
   .grid {
@@ -80,7 +87,7 @@
     font-size: 8.6rem;
     font-weight: 600;
     color: var(--color1);
-    margin-bottom: 1.2rem;
+    margin: 2rem 0 1.2rem;
   }
 
   .step-text-box .sub-service-ti {
@@ -93,9 +100,90 @@
     font-size: 2rem;
     line-height: 1.6;
     color: var(--color7);
+    text-align: left;
+    padding: 0  4rem 0 0;
   }
   
   .space-end-service {
     margin: 10rem 0;
   }
   
+  /* *-------------------------------------- servicios responsive */
+
+  @media (max-width: 900px) {
+
+    .main-servicios {
+      margin: 7rem 0 0 0;
+    }
+
+    .container-servicios {
+      padding: 0 2rem;
+      margin: 0 4rem;
+  }
+
+  .subtitulo-servicios {
+      font-size: 5rem;
+      margin-top: 4rem;
+  }
+
+  .grid {
+      display: block; 
+
+  .step-text-box,
+  .step-img-box {
+      margin-bottom: 4rem;
+  }
+
+  .step-text-box {
+    margin: 7rem 0;
+  }
+
+  .step-text-box .service-number {
+      font-size: 6rem;
+  }
+
+  .step-text-box .sub-service-ti {
+      font-size: 2rem;
+  }
+
+  .step-text-box .step-description {
+      font-size: 1.8rem;
+  }
+
+  .step-img-box .step-img {
+      max-width: 50%; 
+  }
+
+  .step-img-box::before {
+      width: 80%; 
+      padding-bottom: 80%;
+  }
+
+  .step-img-box::after {
+      width: 60%;
+      padding-bottom: 60%;
+  }
+}
+
+  }
+
+/* ----------- */
+.space-servicios {
+  margin: 10rem;
+}
+
+/* *---------------------------------------- responsive */
+@media (max-width: 900px) {
+  .cont-clientes {
+    display: block;
+    margin: 0 0 28rem 0;
+  }
+
+  .section-cliente {
+    padding: 8rem 0;
+  }
+
+  .section-preguntas-respuestas {
+    margin-top: 24rem;
+  }
+}

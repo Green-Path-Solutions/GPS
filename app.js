@@ -1,17 +1,20 @@
-// ?------------------------------------------------------------ Topbar icons
-// !----------------------------------------------------- Solo login, falta corre y tel
+// Js de Mica 2 (para login, wsp, nav y form)
+
+// *-------------------------------------- Topbar icons
+// !---------------------------------- Solo login, falta correo y tel
 
 document.getElementById('login-push').addEventListener('click', function() {
     window.location.href = 'login.html'
 });
 
-// ?------------------------------------------------------------ Wsp flotante
+// *--------------------------------------------------------- Wsp flotante
 
 document.getElementById('wsp-flotante').addEventListener('click', function() {
     window.open('https://www.whatsapp.com', '_blank')
 });
 
-// ?----------------------------------------------------------- Nav hamburguer
+
+// *-------------------------------------------------- Nav hamburguer
 
 const hamburgerToggle = document.querySelector('#hamburger-btn')
 const navbar = document.querySelector('#navbar')
@@ -27,12 +30,10 @@ function onHamburguerClick() {
 
 };
 
-// ?-------------------------------------------------- Form contact
 
-let form = document.querySelector('form')
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    let valor = form[0].value
-    console.log(valor);
-})
+// *-------------------------------------------- botones preguntas/respuestas
 
+document.getElementById('solicitar-respuestas').addEventListener('click', function() {
+   window.location.href = 'contacto.html';
+ });
+ 

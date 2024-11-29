@@ -13,6 +13,7 @@
   </head>
 
 
+ 
   <body class="">
     <header>
       <section class="all-cont">
@@ -30,14 +31,17 @@
         </div>
         <div class="login-home">
           <ion-icon id="login-push" class="log-res" name="person-circle-outline"></ion-icon>
-          <a class="login-pop" href="login.html"><p>Iniciar sesión</p></a>
+          <a class="login-pop" href="/usuarios/login.html"><p>Iniciar sesión</p></a>
         </div>
       </div>
       
-    
-      <!-- * -------------------------------------------------------------- Nav -->
+      <!--*---------------------------------------------------------------- Nav -->
       <nav id="navbar"   class="barra-nav">
-
+        <div class="logo">
+          <a href="index.html" class="logo-link-home">
+            <img src="/img/logo.png" alt="Logo de la compañia" />
+          </a>
+          </div>
         <ul class="nav-links">
           <li class="nav-li home"><a href="index.html">Inicio</a></li>
           <div class="nav-options">
@@ -46,16 +50,9 @@
           <li class="nav-li"><a href="ecommerce.html">Tienda</a></li>
           <li class="nav-li"><a href="contacto.html">Contacto</a></li>
         </ul>
-      </div>
-
-      <div class="logo">
-        <img src="/img/logo.png" alt="Logo de la compañia" />
-        </div>
-      </div>
-       
-
-        <!-- *---------------------------------------------------------  Actions -->
-        <div class="nav-actions"> 
+     
+        <!--*--------------------------------------------------------- btn i nav Actions -->
+        <div id="nav-actions"  class="nav-actions"> 
           <!-- <button id="search"><ion-icon name="search-outline"></ion-icon></button> -->
           <button id="bag-handle"><ion-icon name="bag-handle-outline"></ion-icon></button>
           
@@ -73,8 +70,14 @@
     </section>
     </header>
 
+    <!-- ------------------------------------------------------------ Cotiza -->
+
+  <main class="main-cotiza">
+
 <div class="plans-title">
     <h1>PLANES</h1>
+    <div class="little-box-cotiza"></div>
+
     <p>Planes de gestión de residuos electrónicos adaptados a tu negocio</p>
 </div>
 
@@ -86,37 +89,37 @@
     <div class="plan basic" id="primer-plan">
         <div class="plan-header">
             <h2>Básico</h2>
-            <p>Servicio de reciclaje accesible y funcional para pymes o clientes individuales</p>
+            <p>Servicio de reciclaje accesible<br> para pymes o clientes individuales</p>
         </div>
         <ul class="plan-features">
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
-                <span>Recolección:</span> Hasta 50 kg / Mensual</li>
+                <span>Recolección:</span> Hasta 10 kg /mensual</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Informe Básico:</span> Resumen general</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
-                <span>Certificado:</span> ISO 14001</li>
+                <span>Certificado:</span> Indica cómo se ha realizado el proceso y la información pertinente al transporte hasta la planta de destrucción y al lugar de disposición final</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Soporte por Email:</span> Asistencia estándar</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Datos Sensibles:</span> Destrucción o recuperación segura de datos en dispositivos electrónicos antes de su reciclaje</li>
         </ul>
 
-        <button class="select-plan btn-basic">SELECT</button>
+        <!-- <button class="select-plan btn-basic">SELECT</button> -->
     </div>
 
 <!-- ---------------------------------------------------------------------- Premium -->
     <div class="plan premium" id="segundo-plan">
         <div class="plan-header">
             <h2>Premium</h2>
-            <p>Servicio de reciclaje para empresas más avanzadas y con mayor tamaño</p>
+            <p>Servicio de reciclaje para empresas <br> más avanzadas y con mayor tamaño</p>
         </div>
          <ul class="plan-features ">
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
-                <span>Recolección Flexible:</span> Hasta 100 kg / 2 veces/mes</li>
+                <span>Recolección Flexible:</span> Hasta 50 kg /mensual</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Informe Detallado:</span> Desglose de piezas</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
-                <span>Certificado:</span> ISO 14001, ISO 45001</li>
+                <span>Certificado:</span> Indica cómo se ha realizado el proceso y la información pertinente al transporte hasta la planta de destrucción y al lugar de disposición final</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Soporte Prioritaria:</span> Atención rápida</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
@@ -124,7 +127,7 @@
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Consultoría Básica:</span> Asesoría en gestión</li>
         </ul>
-        <button class="select-plan btn-premium">SELECT</button>
+        <!-- <button class="select-plan btn-premium">SELECT</button> -->
         
     </div>
 
@@ -132,15 +135,15 @@
     <div class="plan enterprise" id="tercer-plan">
         <div class="plan-header">
             <h2>Empresarial</h2>
-            <p>Servicio de reciclaje para grandes empresas y corporaciones</p>
+            <p>Servicio de reciclaje para grandes <br>empresas y corporaciones</p>
         </div>
         <ul class="plan-features">
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
-                <span>Recolección Prioritaria:</span> Sin límite de peso, flexible</li>
+                <span>Recolección Prioritaria:</span> Sin límite de peso</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Informe Personalizado:</span> Analisis y recomendaciones</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
-                <span>Certificado Integral:</span> ISO 14001, ISO 45001, Certificación R2, E-Stewards</li>
+                <span>Certificado:</span> Indica cómo se ha realizado el proceso y la información pertinente al transporte hasta la planta de destrucción y al lugar de disposición final</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Soporte por Dedicado:</span> Atención 24/7</li>
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
@@ -150,24 +153,25 @@
             <li><ion-icon name="checkmark-circle-outline"></ion-icon>
                 <span>Reacondicionamiento:</span> Servicio de reacondicionamiento de los mejores equipos que son devueltos al cliente</li>
         </ul>
-        <button class="select-plan btn-enterprise">SELECT</button>
+        <!-- <button class="select-plan btn-enterprise">SELECT</button> -->
     </div>
 </section>
 
- <!-- ?---------------------------------------- Clientes/ no clientes -->
-     
- <div class="cont-clientes">
-  <div class="section-cliente section1">
-    <h3>¿Ya sos cliente?</h3>
-      <p>Podes solicitar la recolección de tus residuos electrónicos directamente online.</p>
-      <button id="solicitar-reco" class="btn-cliente" >Solicitar recolección</button>
+<!-- *----------------------------------------------------- Wsp flotante -->
+<div id="wsp-flotante" class="wsp-flotante"><img src="./src/img/whatsapp_icon.png" alt="WhatsApp GPS"></div>
+    
+ <!-- ?--------------------------------------------------------------- preguntas/ respuestas -->
+
+ <section class="section-preguntas-respuestas">
+  <div class="cont-preguntas-respuestas">
+    <h3>¿Tenés preguntas? <span> Tenemos respuestas</span></h3>
+    <p>Envianos tu consulta y un asesor especializado te contactará pronto</p>
+    <button id="solicitar-respuestas" class="btn-contacto-nosotros" >CONTACTAR</button>
   </div>
-  <div class="section-cliente section2">
-    <h3>¿Aún no sos cliente?</h3>
-      <p>Valoriza tus residuos electrónicos y súmate a las empresas sostenibles.</p>
-      <button id="solicitar-info" class="btn-cliente" >Solicitar información</button>
-  </div>
-</div>
+</section>
+ 
+
+</main>
 
     <!-- ! Aquí va el pie de página -->
    
@@ -220,7 +224,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script type="module" src="/main.js"></script>
     <script type="module" src="/app.js"></script>
     <script src="/mode.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

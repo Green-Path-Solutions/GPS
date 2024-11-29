@@ -31,6 +31,10 @@ body.dark .login-home a:hover {
 
 /* *------------------------------------------------------ format navbar */
 
+body.dark .barra-nav .hamburger ion-icon {
+    color: var(--color1);
+  }
+
 /* ----------------------------------------------------------- */
 
 body.dark .text-section {
@@ -53,7 +57,11 @@ body.dark .cont-quienes-somos .cont-text .parrafo-historia {
 /* *---------------------------------------------------- fondo sección Nuestros servicios */
 
 body.dark .service {
-    background-image: linear-gradient(to right bottom, rgba(0, 151, 178, 0.8), rgba(126, 217, 87, 0.4));
+    background: rgba(14, 75, 32, 0.5);
+}
+
+body.dark .service .service-p {
+    color: var(--color1);
 }
 
 body.dark .home-quienes-somos .text-section p {
@@ -71,3 +79,14 @@ body.dark
 .step-text-box .step-description {
     color: var(--color6);
 }
+
+/* *---------------------------------------------- Alianzas */
+
+body.dark .clientes-section .container-logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #545454);
+  }
+body.dark .clientes-section .container-logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #545454);
+  }

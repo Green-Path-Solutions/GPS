@@ -1,31 +1,31 @@
-:root {
-    --color1: #93bb41;
-    --color2: #a6a6a6;
-    --color3: #545454;
-    --color4: #97b3a5;
-    --color5: #f1f1f1;
-}
-
 .plans-title {
-    margin: 70px 0 0 60px ;
+    margin: 12rem 0 0 5rem ;
 }
 
 .plans-title h1 {
     color: var(--color1);
-    font-size: 36px;
+    font-size: 6rem;
+    font-weight: 400;
 }
 
+.little-box-cotiza {
+  width: 5rem;
+    height: 1.1rem;
+    background-color: var(--color1);
+    margin: .6rem 0rem 3rem .4rem;
+}
+
+
 .plans-title p {
-    margin-top: 25px;
-    font-size: 18px;
-    color: var(--color3);
+    margin-bottom: 3rem;
+    font-size: 2.1rem;
+    color: var(--color2);
 }
 
 /* --------------------------------------------- Cuadro planes */
 .pricing-plans {
-    margin: auto;
-    padding: 50px 0 90px 0;
-    max-width: 1450px;
+    margin: 0 5rem 5rem;
+    padding: 50px 0 20px 0;
     display: flex;
     justify-content: space-between;
     gap: 50px;  
@@ -44,17 +44,21 @@
 #primer-plan ion-icon {
     color: var(--color4);
     font-size: 1.5em;
-    margin-top: 2%;
+    padding-top: 1rem;
 }
 
 #segundo-plan ion-icon {
     color: var(--color1);
     font-size: 1.5em;
+    padding-top: 1rem;
+
 }
 
 #tercer-plan ion-icon {
-    color: #0097b2;
+    color: var(--color8);
     font-size: 1.5em;
+    padding-top: 1rem;
+
 }
 
 #primer-plan,
@@ -70,18 +74,19 @@
 
 .plan-header {
     padding:  40px 0;
-    color: #fff;
+    color: var(--color5);
     margin-bottom: 20px;
   }
   
 .plan-header h2 {
     margin-bottom: 10px;
-    padding-top: 3cqb;
-    font-size: 30px;
+    padding-top: 3px;
+    font-size: 4rem;
   }
 
 .plan-header p {
-    font-size: 13px;
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
    
 }
 
@@ -108,18 +113,18 @@
 .btn-basic,
 .plan.basic .plan-header {
     
-    background-image: linear-gradient(to right, #8c52ff, #2f7fff, #009cff, #00b1fb, #55c1e6);
+    background-color: #0097b2;
 }
 
 
 .btn-premium,
 .plan.premium .plan-header {
-    background-image: linear-gradient(to right, #8c52ff, #e92ec9, #ff3891, #ff6665, #ff914d);
+    background-color: var(--color1);
 }
 
 .btn-enterprise,
 .plan.enterprise .plan-header {
-    background-image: linear-gradient(to right, #0cc0df, #4ecdc1, #91d5a2, #ccd793, #ffd59d);
+    background-color: var(--color9);
 }
 
 
@@ -127,9 +132,9 @@
   
   .plan {
     flex: 1;
-    background-color: var(--color5);
+    background-color: var(--color6);
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px rgba(92, 90, 90, 0.5);
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
@@ -140,22 +145,38 @@
   }
   
   .plan-features {
-    padding: 20px 30px 0 30px;
+    padding: 2rem 3rem;
     text-align: left;
-    height: 480px;
+    height: 100%;
+    margin-bottom: 4rem;
   }
   
   .plan-features li {
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
     font-size: 16px;
     color: #333;
   }
 
-  @media (max-width: 768px) {
+  .plan-features span {
+    font-size: 1.8rem;
+    padding: 0 .5rem;
+    color: var(--color7);
+  }
+
+
+  @media (max-width: 1000px) {
+    .plans-title{
+      margin-top: 10rem ;
+    }
+
     .pricing-plans {
       flex-direction: column;
+      margin-bottom: 7rem;
     }
     .plan-features {
-        height: 385px;
+      height: 100%;
+      margin-bottom: 6rem;
     }
   }
+
+

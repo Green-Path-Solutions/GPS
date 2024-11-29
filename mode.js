@@ -1,61 +1,43 @@
-// Js de mica
+// Js de mica (para el dark/light mode y el counter del home)
 
 // *-------------------------------------------- dark & light
+
+//------------------------ Guarda la preferencia del tema en localStorage
+
+function setThemePreference(theme) {
+   localStorage.setItem('theme', theme)
+}
+
+// --------------------------- Aplica el tema basado en la preferencia guardada
+
+function applyTheme() {
+   const savedTheme = localStorage.getItem('theme');
+   if (savedTheme === 'dark') {
+       document.body.classList.add('dark')
+   } else {
+       document.body.classList.remove('dark')
+   }
+}
+
+// ............
 
 const btnMoonMode = document.getElementById('moon-mode');
 const btnSunMode = document.getElementById('sun-mode');
 
+// ----------------------------  Evento para el botón de modo oscuro
+btnMoonMode.addEventListener('click', function() {
+   document.body.classList.add('dark')
+   setThemePreference('dark')
+});
 
-btnMoonMode.addEventListener('click',function() {
-   document.body.classList.add('dark');
-})
+// -------------------------------- Evento para el botón de modo claro
+btnSunMode.addEventListener('click', function() {
+   document.body.classList.remove('dark')
+   setThemePreference('light')
+});
 
-btnSunMode.addEventListener('click',function() {
-   document.body.classList.remove('dark');
-})
+// ------------------------------- Inicializa el tema cuando se carga la página
 
-// *-------------------------------------------- botones clientes/ noclientes
-
-// document.getElementById('solicitar-reco').addEventListener('click', function() {
-//    window.location.href = '#';
-//  });
- 
-//  document.getElementById('solicitar-info').addEventListener('click', function() {
-//    window.location.href = '#';
-//  });
+document.addEventListener('DOMContentLoaded', applyTheme)
 
 
-// * ------------------------------------------------ counter nosotros
-
-function animateNumber(elementId, target) {
-   let currentNumber = 0
-
-   const element = document.getElementById(elementId)
-   const increment = Math.ceil(target / 200)
-   const duration = 2000
-   const intervalTime = Math.ceil(duration / (target / increment));
-
-   const interval = setInterval(() => {
-       currentNumber += increment;
-       if (currentNumber >= target) {
-           currentNumber = target;
-           clearInterval(interval);
-       }
-       element.textContent = `+${currentNumber.toLocaleString()} Ton`;
-   }, intervalTime);
-}
-
-function checkScroll() {
-   const container = document.querySelector('.section-counter-nosotros');
-   const containerPosition = container.getBoundingClientRect().top;
-   const screenPosition = window.innerHeight;
-
-   if (containerPosition < screenPosition) {
-       animateNumber("recolectado-nosotros", 150000);
-       animateNumber("recuperado-nosotros", 100000);
-       window.removeEventListener('scroll', checkScroll);
-   }
-}
-
-window.addEventListener('scroll', checkScroll);
-document.addEventListener("DOMContentLoaded", checkScroll);

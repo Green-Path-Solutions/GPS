@@ -1,5 +1,5 @@
 .aviso-cookies {
-    display: block;
+    display: none;
     background: var(--color6);
     padding: 1rem;
     width: calc(100% - 40px);
@@ -54,6 +54,7 @@
 }
 
 .fondo-aviso-cookies {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;

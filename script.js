@@ -39,9 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Variables para el menú de navegación
-  const navToggleButton = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
 
   // Variables para el carrusel
   const prevButton = document.querySelector(".carousel-prev");
@@ -50,24 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".carousel-slide");
   let currentIndex = 0;
 
-  // Inicializa el tema basado en localStorage
-  const currentTheme = localStorage.getItem("theme") || "light";
-  if (currentTheme === "dark") {
-    body.classList.add("dark-mode");
-    sunIcon.classList.add("hidden");
-    moonIcon.classList.remove("hidden");
-  }
-
-  // Maneja el cambio de tema
-  themeToggleButton.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-    sunIcon.classList.toggle("hidden");
-    moonIcon.classList.toggle("hidden");
-
-    // Guarda la preferencia del tema en localStorage
-    const newTheme = body.classList.contains("dark-mode") ? "dark" : "light";
-    localStorage.setItem("theme", newTheme);
-  });
+  
 
   // Maneja el menú en dispositivos móviles
   navToggleButton.addEventListener("click", () => {

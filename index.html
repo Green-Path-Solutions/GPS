@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/login.css"> 
-    <link rel="stylesheet" href="/css/contacto.css"> 
     <link rel="stylesheet" href="/css/mode.css">
     <link rel="stylesheet" href="/cookies/cookies.css">
     <link rel="icon" href="/src/img/logo-sinTitulo.png " >
@@ -30,19 +29,17 @@
         </div>
         <div class="login-home">
           <ion-icon id="login-push" class="log-res" name="person-circle-outline"></ion-icon>
-          <a class="login-pop" href="login.html"><p>Iniciar sesión</p></a>
+          <a class="login-pop" href="http://localhost:8080/api/auth/login"><p>Iniciar sesión</p></a>
         </div>
       </div>
       
       <!--*---------------------------------------------------------------- Nav -->
-
       <nav id="navbar"   class="barra-nav">
         <div class="logo">
           <a href="index.html" class="logo-link-home">
-          <img src="/img/logo.png" alt="Logo de la compañia" />
+            <img src="/img/logo.png" alt="Logo de la compañia" />
           </a>
-        </div>
-
+          </div>
         <ul class="nav-links">
           <li class="nav-li home"><a href="index.html">Inicio</a></li>
           <div class="nav-options">
@@ -52,8 +49,11 @@
           <li class="nav-li"><a href="contacto.html">Contacto</a></li>
         </ul>
      
-        <!--*-------------------------------------------------------- btn i nav Actions -->
+       
+
+        <!--*--------------------------------------------------------- btn i nav Actions -->
         <div id="nav-actions"  class="nav-actions"> 
+          <!-- <button id="search"><ion-icon name="search-outline"></ion-icon></button> -->
           <button id="bag-handle"><ion-icon name="bag-handle-outline"></ion-icon></button>
           
           <button class="sun-theme" id="sun-mode"><ion-icon  name="sunny-outline"></ion-icon></button>
@@ -70,9 +70,9 @@
     </section>
     </header>
 
-    <main>
-
-<!-- * ------------------------------------------------- cookies -->
+    <!-- * ------------------------------------------------- cookies -->
+    
+  <main>
  <div class="aviso-cookies" id="aviso-cookies">
   <ion-icon name="close-outline" class="close-icon" id="close-icon"></ion-icon>
   <p class="parrafo">Utilizamos cookies para ofrecerte la 
@@ -84,7 +84,6 @@
 
   <button id="aceptar-cookies" class="btn-cookies">Aceptar</button>
   <button id="rechazar-cookies" class="btn-cookies">Rechazar</button>
-  <!-- <button id="ajustes-cookies" class="btn-cookies btn-ajustes">Ajustes</button> -->
 
  </div>
  <div class="fondo-aviso-cookies" id="fondo-cookies"></div>
@@ -170,11 +169,23 @@
           </section>
          
           
-          <!-- ? ---------------------------------------------------------- Barra misión /visión -->
-          <div class="barra-img">
-            <img src="/img/barra.png">
-            <p></p>
-          </div>
+        
+<!-- ! ---------------------------------------------------- cuadro cifras aumento -->
+
+<section class="section-counter-nosotros">
+  <div class="counter-container-nosotros">
+  
+    <div class="counter-nosotros">
+      <div class="number-nosotros" id="recolectado-nosotros">0</div>
+      <h3><ion-icon name="trash"></ion-icon>material recolectado</h3>
+  </div>
+  <div class="counter-nosotros">
+      <div class="number-nosotros" id="recuperado-nosotros">0</div>
+      <h3><ion-icon name="leaf"></ion-icon>material recuperado</h3>
+  </div>
+
+</div>
+</section>
         </main>
 <!-- ?----------------------------------------- Sección Nuestros servicios -->
 
@@ -182,7 +193,16 @@
     <div class="service">
    
       <h2>NUESTROS SERVICIOS</h2>
-      <p class="service-p">Soluciones ecológicas para el manejo de residuos electrónicos</p>
+      <p class="service-p">
+        Gestionamos de forma integral y segura los desechos electrónicos y eléctricos de todo tipo, 
+        como computadoras, aparatos de comunicaciones, monitores y celulares, entre otros.
+        Ofrecemos un servicio profesional 
+        de reacondicionamiento, lo que le brinda a estos materiales una segunda vida útil, y 
+        los reciclamos cuando no es posible.
+        Nuestro compromiso con las 
+       políticas para el cuidado del medio ambiente nos lleva a utilizar 
+       los mejores métodos de reciclado. 
+      </p>
 
       <div class="small-image-item">
         <img src="img/shell.png" alt="Imagen de un escudo" />
@@ -206,21 +226,7 @@
       </div>
         </section>
 
-        <!-- ?---------------------------------------- Clientes/ no clientes -->
-     
-        <!-- <div class="cont-clientes">
-          <div class="section-cliente section1">
-            <h3>¿Ya sos cliente?</h3>
-              <p>Podes solicitar la recolección de tus residuos electrónicos directamente online.</p>
-              <button id="solicitar-reco" class="btn-cliente" >Solicitar recolección</button>
-          </div>
-          <div class="section-cliente section2">
-            <h3>¿Aún no sos cliente?</h3>
-              <p>Valoriza tus residuos electrónicos y súmate a las empresas sostenibles.</p>
-              <button id="solicitar-info" class="btn-cliente" >Solicitar información</button>
-          </div>
-      </div> -->
-    
+  
 <!-- ?--------------------------------------------------------------- preguntas/ respuestas -->
 
 <section class="section-preguntas-respuestas">
@@ -234,7 +240,7 @@
 
     <!-- ? --------------------------------------------------- Logos -->
     <div class="clientes-section">
-      <!-- <h2>Clientes y alianzas</h2> -->
+      <h2>Clientes y alianzas:</h2>
       <div class="container-logos">
         <div class="clientes-container">
           <img src="/img/logo1.png" alt="Partner 1" />
@@ -318,14 +324,12 @@
  </footer>
 
 
-    <script type="module" src="/main.js"></script>
     <script type="module" src="/app.js"></script>
     <script src="/mode.js"></script>
+    <script src="/contador-home.js"></script>
     <script src="/cookies/cookies.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
 
 </body>
 </html>

@@ -42,6 +42,11 @@
   }
 }
 
+main {
+  padding-top: 70px;
+}
+
+
 /* --------------------------------------------------------------- Carrousel */
 .container-carousel {
   background-color: var(--color9);
@@ -84,7 +89,9 @@
   left: 0;
   width: 90%;
   height: 100%;
-  background: linear-gradient(to right bottom, rgba(0, 151, 178, 0.8), rgba(126, 217, 87, 0.4));
+  backdrop-filter: blur(20px);
+  background: rgba(14, 75, 32, 0.5);
+  /* background: linear-gradient(to right bottom, rgba(0, 151, 178, 0.8), rgba(126, 217, 87, 0.4)); */
   z-index: -1;
   /* animation: arrive 5s ease-out, stretch 5s ease-in-out 5s forwards; */
 }
@@ -99,30 +106,29 @@
   width: 30rem;
 }
 .container-carousel .container-bg .container-text .btn-tarifas {
-  padding: 1.1rem 2rem;
+  padding: 1.1rem 3rem;
   border-radius: 20px;
-  border: 1px solid var(--color9);
-  background-color: var(--color9);
+  border: 1px solid var(--color1);
+  background-color: var(--color1);
   color: var(--color5);
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   transition: all 0.35s;
 }
 .container-carousel .container-bg .container-text .btn-tarifas:hover {
   border: 1px solid var(--color9);
-  background-color: transparent;
-  color: var(--color9);
-  box-shadow: 0 0 0 0px var(--color9);
+  background-color: var(--color9);
+  color: var(--color5);
 }
 .container-carousel .container-bg .container-text .btn-ver-mas {
   text-decoration: none;
-  padding: 1.1rem 2rem;
+  padding: 1rem 3rem;
   margin-left: 1rem;
   border-radius: 20px;
-  border: 1px solid var(--color8);
-  color: var(--color6);
-  background-color: var(--color8);
-  font-size: 1.7rem;
+  border: 1px solid var(--color6);
+  color: var(--color1);
+  background-color: var(--color6);
+  font-size: 1.8rem;
   transition: all 0.35s;
 }
 .container-carousel .container-bg .container-text .btn-ver-mas:hover {
@@ -154,14 +160,13 @@
     width: 100%;
     height: 100%;
     backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(14, 75, 32, 0.5);
   }
 
   .container-carousel .container-bg .container-text h1 {
     font-size: 2.5rem;
     padding-bottom: .5em;
-    color: var(--color9);
-    font-weight: bold;
+    color: var(--color5);
   }
 
   .container-carousel .container-bg .container-text .btn-i {
@@ -175,20 +180,9 @@
   .container-carousel .container-bg .container-text .btn-ver-mas {
     width: 100%;
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 1.8rem;
     margin-left: 0;
-  }
-
-  .container-carousel .container-bg .container-text .btn-ver-mas {
-    background-color: var(--color4);
-    border: 1px solid var(--color4);
-    color: var(--color5);
-  }
-
-  .container-carousel .container-bg .container-text .btn-ver-mas:hover {
-    color: var(--color0);
-    border: 1px solid var(--color0);
   }
 
 }
@@ -361,63 +355,94 @@
   }
 } 
 
+/* !-------------------------------------------------------- cuadrito cifras en aumento */
 
-/* ?--------------------------------------------- Barra img */
+.section-counter-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  margin: 10rem 0rem;
+  background-image: linear-gradient(0deg,
+  rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),url(/src/img/naturaleza_Felix-Mittermeier_Pexels.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.barra-img {
-  text-align: center;
-  overflow: hidden;
-  position: relative;
+.counter-container-nosotros {
+  display: flex;
+  justify-content: space-around;
   width: 80%;
-  max-width: 120em;
-  margin: 12rem auto;
+  max-width: 800px;
 }
 
-.barra-img img {
-  margin-bottom: 1rem ;
-  width: 100%;
-  transition: transform 1s;
+.counter-nosotros {
+  border: 1.2px solid var(--color1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  margin: 0 3rem;
 }
 
-.barra-img img:hover {
-  transform: scale(1.1);
+.counter-nosotros .number-nosotros {
+  font-size: 2.5rem;
+  color: var(--color1);
+  margin-bottom: 2rem;
 }
 
-/* *------------------------------------------------- Barra img responsive */
+.counter-nosotros h3 {
+  font-size: 2rem;
+  color: var(--color1);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
 
-@media (max-width: 1000px) {
-  .barra-img {
-    width: 100%;
-    max-width: none;
-    margin: 0;
+.counter-nosotros ion-icon {
+  font-size: 1.5rem;
+  margin-right: .4rem;
+}
+
+/* *--------------------------------------------------- cuadrito cifras en aumento responsive */
+@media (max-width: 600px) {
+
+  .section-counter-nosotros {
+      height: 50vh;
   }
 
-  .barra-img img {
-    width: 100%;
-    margin-bottom: 8rem ;
+  .counter-container-nosotros {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .counter-nosotros {
+      margin: 10px 0;
+      width: 50%;
+      border: none;
   }
 }
 
 /* ?--------------------------------------------- Sección nuestros servicios (home) */
 .container-ser {
   position: relative;
-  background: #000;
   background-image: url(/src/img/verde-oficina.webp);
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .service {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(25px);
   margin: 0 auto;
-  padding: 9.6rem;
+  padding: 8rem 10rem 10rem ;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
   align-items: center;
   justify-content: center;
-  max-width: 140rem;
+  /* max-width: 140rem; */
   position: relative;
   z-index: 1;
   margin-bottom: 7rem;
@@ -427,17 +452,18 @@
   grid-column: span 3;
   justify-self: center;
   font-size: 4.5rem;
-  color: var(--color9);
-  margin-top: -5rem;
+  color: var(--color5);
 }
 
 .service .service-p {
-  font-size: 2.5rem;
-  color: var(--color7);
-  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: .2px;
+  color: var(--color5);
+  font-weight: 300;
   grid-column: span 3;
   justify-self: center;
-  margin: -4rem 0 8rem 0;
+  text-align: left;
+  margin: .8rem 15rem 8rem;
 }
 
 .service .small-image-item {
@@ -447,10 +473,9 @@
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  border: 1px solid var(--color1);
   box-sizing: border-box;
   padding: 2rem 4rem;
-  background-color: #292929;
+  background-color: var(--color0);
   border-radius: 10px;
   text-align: center;
   max-width: 30rem;
@@ -501,11 +526,12 @@
 }
 
 .clientes-section h2 {
-  font-size: 3.6rem;
-  text-transform: uppercase;
   color: var(--color4);
-  margin-bottom: 2.5rem
+  margin: 5rem 0 2rem 0;
+  font-size: 5rem;
+
 }
+
 .clientes-section .container-logos {
   overflow: hidden;
   padding: 6rem 0;
@@ -567,9 +593,8 @@
   }
   
   .service .service-p {
-    font-size: 2rem;
-    margin: 2.5rem 0 4rem 0;
-    text-align: center;
+    margin: 3rem 2.1rem 6rem;
+    text-align: left;
   }
   
   .service .small-image-item {
@@ -596,7 +621,7 @@
   }
 
   .clientes-section h2 {
-    font-size: 2.6rem;
+    font-size: 4rem;
   }
 }
 
